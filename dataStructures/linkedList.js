@@ -1,61 +1,3 @@
-//洗牌算法，随机解构
-class SpuerArray extends Array {
-    shuffle() {
-        for(let i = this.length - 1; i>0;i--) {
-            const j = Math.floor(Math.random() * (i+1));
-            [this[i], this[j]] = [this[j], this[i]]
-        }
-    }
-}
-
-class Queue{
-    constructor(){
-        this.count = 0; //大小
-        this.lowestCount = 0; //第一个元素的位置
-        this.items = {}; //元素存储容器
-    }
-
-    //追加元素
-    enQueue(el) {
-        this.items[this.count] = el;
-        this.count++;
-    }
-
-    //移除元素
-    deQueue() {
-        if(this.isEmpty()){
-            return undefined;
-        }
-        const targetItem = this.items[this.lowestCount];
-        delete this.items[this.lowestCount];
-        this.count--;
-        this.lowestCount++;
-        return targetItem;
-    }
-
-    //查看队首元素
-    peek() {
-        if(this.isEmpty()){
-            return undefined;
-        }
-        return this.items[this.lowestCount];
-    }
-
-    clear() {
-        this.count = 0;
-        this.lowestCount = 0;
-        this.items = {};
-    }
-
-    toString() {
-        
-    }
-
-    isEmpty() {
-        return this.count - this.lowestCount === 0;
-    }
-}
-
 class LinkedList {
     constructor() {
         this.count = 0; //元素数量
@@ -158,13 +100,7 @@ _.push(2);
 _.removeAt(2);
 console.log(_.getEl(0));
 
-class DoublyLinkListNode extends LinkListNode{//双向链表节点
-    constructor(el, index){
-        super(el, index);
-        this.prev = prev;
-    }
-}
-
-class DoublyLinkList extends LinkedList{
-    
-}
+export {
+    LinkListNode,
+    LinkedList
+};
