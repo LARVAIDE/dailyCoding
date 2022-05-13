@@ -9,36 +9,61 @@ class Deque {
         this.items = {}; //容器
     }
 
-    addFront() {
+    addFront(el) {
         if(this.isEmpty()){
-
+            this.addBack(el);
         }
         if(this.lowestCount > 0){
-
+            this.lowestCount--;
+            this.items[lowestCount] = el;
         }
-        if(this.lowestCount == 0){
-            
+        if(this.lowestCount === 0){
+            for(let i=0;i<this.count;i++){
+                this.items[i] = this.items[i-1];
+            }
+            this.count++;
+            this.lowestCount = 0;
+            this.items[0] = el;
         }
     }
 
     addBack() {
-
+        this.items[this.count] = el;
+        this.count++;
     }
 
     removeFront() {
-
+        if(this.isEmpty()){
+            return undefined;
+        }
+        const targetItem = this.items[this.lowestCount];
+        delete this.items[this.lowestCount];
+        this.lowestCount++;
+        return targetItem;
     }
 
     removeBack() {
-
+        if(this.isEmpty()){
+            return undefined;
+        }
+        this.count--;
+        const targetItem = this.items[this.count];
+        delete this.items[this.count];
+        return targetItem;
     }
 
     peekFront() {
-
+        if(this.isEmpty()){
+            return undefined;
+        }
+        return this.items[this.lowestCount];
     }
 
     peekBack() {
-
+        if(this.isEmpty()){
+            return undefined;
+        }
+        return this.items[this.count - 1];
     }
 
     clear() {
