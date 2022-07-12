@@ -1,3 +1,5 @@
 /node_modules
 /TS/node_modules
 /TS/dist
+/exsample-cli/node_modules
+/gulp/node_modules
