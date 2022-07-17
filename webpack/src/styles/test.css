@@ -1,0 +1,13 @@
+.title{
+    color: #ff000078;
+    transition: all .3s;
+    user-select: none;
+}
+
+.my-img{
+    width: 286px;
+    height: 64px;
+    background-size: contain;
+    background-image: url('../img/footerWave.40ccbc0c.svg');
+    border: 1px solid #000;
+}

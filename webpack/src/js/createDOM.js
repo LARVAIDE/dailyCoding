@@ -1,5 +1,5 @@
-import '../styles/index.css'
-import '../styles/index.less'
+import '../styles/index'
+
 function H2() {
     const container = document.createElement('h2')
     container.innerText = 'this is h2'
