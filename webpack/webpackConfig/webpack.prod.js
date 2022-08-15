@@ -13,23 +13,23 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             use: [
-                MiniCssExtractPlugin.loader, 
+                MiniCssExtractPlugin.loader,
                 {
                     loader: 'css-loader',
                     options: {
                         esModule: false,
                         importLoaders: 1
                     }
-                }, 
+                },
                 'postcss-loader'
             ],
             sideEffects: true
         }, {
             test: /\.less$/,
             use: [
-                MiniCssExtractPlugin.loader, 
-                'css-loader', 
-                'postcss-loader', 
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                'postcss-loader',
                 'less-loader'
             ]
         }]
@@ -45,18 +45,41 @@ module.exports = {
         ],
         chunkIds: 'deterministic',
         splitChunks: {
-            chunks: 'async',
-            minSize: 20000,
-            minChunks: 1,
-            cacheGroups: {
-                defaultVendors: {
-                  test: /[\\/]node_modules[\\/]/,
-                  filename: 'js/[name].vendor.js',
-                  priority: -10,
-                  reuseExistingChunk: true,
+            cacheGroups: { // 配置提取模块的方案
+                default: false,
+                styles: {
+                    name: 'styles',
+                    test: /\.(s?css|less|sass)$/,
+                    chunks: 'all',
+                    enforce: true,
+                    priority: 10,
+                },
+                common: {
+                    name: 'chunk-common',
+                    chunks: 'all',
+                    minChunks: 2,
+                    maxInitialRequests: 5,
+                    minSize: 0,
+                    priority: 1,
+                    enforce: true,
+                    reuseExistingChunk: true,
+                },
+                vendors: {
+                    name: 'chunk-vendors',
+                    test: /[\\/]node_modules[\\/]/,
+                    chunks: 'all',
+                    priority: 2,
+                    enforce: true,
+                    reuseExistingChunk: true,
                 }
-            }
-        }
+            },
+        },
+    },
+    /**
+     * 缓存生成的 webpack 模块和 chunk，来改善构建速度
+     */
+    cache: {
+        type: 'filesystem',
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -69,7 +92,7 @@ module.exports = {
             }]
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[hash:8].css'
+            filename: 'css/[name].[contenthash:8].css'
         }),
         // new webpack.optimize.ModuleConcatenationPlugin(), //在使用 tree shaking 时必须有 ModuleConcatenationPlugin 的支持，production模式默认启用了，其他模式需要手动引入
         new CompressionPlugin({

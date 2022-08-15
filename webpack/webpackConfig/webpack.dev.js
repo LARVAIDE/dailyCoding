@@ -16,6 +16,11 @@ module.exports = {
             }
         }
     },
+    optimization: {
+        sideEffects: true,
+        usedExports: true,
+        // minimize: true
+    },
     module: {
         rules: [{
             test: /\.css$/,
