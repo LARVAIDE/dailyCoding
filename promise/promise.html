@@ -25,7 +25,7 @@
         //     console.log('finally')
         // });
 
-        async function fetchReq(controller){
+        async function fetchReq(controller) {
             const res = await fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits?per_page=101', {
                 method: 'get',
                 cache: "no-store",
@@ -36,18 +36,18 @@
             const { status, body, headers } = res;
             const res_clone = res.clone();
             fetchProgress(res_clone, headers);
-            if(status == 200){
+            if (status == 200) {
                 let json = await res.json();
                 console.log(json)
             }
         }
 
-        async function fetchProgress(res_clone, headers){
+        async function fetchProgress(res_clone, headers) {
             const reader = res_clone.body.getReader()
             const contentLength = headers.get('Content-Length');
             let receivedLength = 0;
-            while(true) {
-                const {done, value} = await reader.read();
+            while (true) {
+                const { done, value } = await reader.read();
                 if (done) {
                     break;
                 }
@@ -56,59 +56,13 @@
             }
         }
 
-        function cancelFetch(){
+        function cancelFetch() {
             let controller = new AbortController();
             setTimeout(() => controller.abort(), 10000);
             return fetchReq.call(this, controller)
         }
 
         // cancelFetch()
-
-        const PENDING = 'pending';
-        const FUFILLED = 'fufilled';
-        const REJECTED = 'rejected';
-        class DiyPromise{
-            constructor(exector){
-                exector(this.resolve, this.reject);
-            }
-            status = PENDING;
-            res = undefined;
-            err = undefined;
-            resolveCallback = undefined;
-            rejectCallback = undefined;
-            resolve = res => {
-                if(this.status !== PENDING) return;
-                this.status = FUFILLED;
-                this.res = res;
-                this.resolveCallback && this.resolveCallback(this.res);
-            }
-
-            reject = err => {
-                if(this.status !== PENDING) return;
-                this.status = REJECTED;
-                this.err = err;
-                this.rejectCallback && this.rejectCallback(this.err);
-            }
-
-            then = (resolveCallback, rejectCallback) => {
-                if(this.status === FUFILLED){
-                    resolveCallback(this.res);
-                }else if(this.status === REJECTED){
-                    rejectCallback(this.err);
-                }else {
-                    //等待状态
-                    //存储回调函数
-                    this.resolveCallback = resolveCallback;
-                    this.rejectCallback = rejectCallback;
-                }
-            }
-        }
-
-        new DiyPromise((resolve, reject)=>{
-            setTimeout(() => resolve('ssss'), 2000);
-        }).then((res)=>{
-            console.log(res)
-        })
     </script>
 </body>
 

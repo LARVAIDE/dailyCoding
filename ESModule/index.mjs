@@ -1,6 +1,6 @@
-import { foo, bar } from "./modules.mjs";
+import { foo, bar, default as a } from "./modules.mjs";
 
-console.log(foo, bar)
+console.log(foo, bar, a)
 
 
 import { fileURLToPath } from "url";
