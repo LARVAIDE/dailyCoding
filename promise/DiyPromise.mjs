@@ -123,6 +123,37 @@ class DiyPromise {
         })
     }
 
+    static allSettled() {
+        const resultList = []
+        let currentIdx = 0
+        return new DiyPromise((resolve, reject) => {
+            /**
+             * 保存paramsList的各项处理结果
+             * @param {*} index 
+             * @param {*} value 
+             */
+            function saveData(index, value) {
+                resultList[index] = value
+                currentIdx++
+                if (paramsList.length === currentIdx) {// 等待所有行为都返回结果，再调用resolve完成all
+                    resolve(resultList)
+                }
+            }
+            for (let index = 0; index < paramsList.length; index++) {
+                const element = paramsList[index];
+                if (element instanceof DiyPromise) {// promise
+                    element.then(res => {
+                        saveData(index, res)
+                    }, err => {
+                        saveData(index, err)
+                    })
+                } else {// 普通参数
+                    saveData(index, element)
+                }
+            }
+        })
+    }
+
     static race(paramsList) {
         return new DiyPromise((resolve, reject) => {
             paramsList.forEach(promise => {
