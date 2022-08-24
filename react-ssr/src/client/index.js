@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import routers from "../share/router";
 import { renderRoutes } from "react-router-config";
-import Home from "../share/pages/Home";
+import routes from "../share/routes";
+import { Provider } from "react-redux";
+import store from "./createStore";
 
 ReactDOM.hydrate(
-    <BrowserRouter>
-        {renderRoutes(routers)}
-    </BrowserRouter>
-    , document.getElementById("root"))
+  <Provider store={store}>
+    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
+  </Provider>,
+  document.getElementById("root")
+);

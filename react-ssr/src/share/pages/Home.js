@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Home() {
-    return <div onClick={() => console.log('hello')}>
-        Home works
-        <Link to='/list'>to list page</Link>
-    </div>
+  return <div onClick={() => console.log("Hello")}>
+    Home works
+    <Link to="/list">jump to list</Link>
+  </div>;
 }
 
-export default Home
+export default Home;
