@@ -22,7 +22,7 @@ module.exports = {
     plugins: [
         new webpack.DllPlugin({
             name: 'dll_[name]',
-            path: resolveApp('dll/[name].mainfest.json')
+            path: resolveApp('dll/mainfest.json')
         })
     ]
 }

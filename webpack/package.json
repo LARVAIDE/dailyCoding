@@ -12,7 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/preset-env": "^7.18.6",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "add-asset-html-webpack-plugin": "^5.0.2",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "browserslist": "^4.21.1",
@@ -45,9 +48,8 @@
     "./src/js/**",
     "./src/styles/**"
   ],
-  "browserslist": [
-    "> 0.01%",
-    "last 2 version",
-    "not dead"
-  ]
+  "dependencies": {
+    "core-js": "^3.25.0",
+    "regenerator-runtime": "^0.13.9"
+  }
 }

@@ -1,10 +1,9 @@
 module.exports = {
     mode: 'development',
-    devtool: 'cheap-module-source-map',
+    devtool: false,//'cheap-module-source-map'
     devServer: {
         hot: true,
         port: 8080,
-        compress: true,
         historyApiFallback: true,
         proxy: {
             '/api': {
@@ -15,11 +14,6 @@ module.exports = {
                 changeOrigin: true
             }
         }
-    },
-    optimization: {
-        sideEffects: true,
-        usedExports: true,
-        // minimize: true
     },
     module: {
         rules: [{

@@ -1,5 +1,7 @@
+const webpack = require('webpack')
 const { DefinePlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
 const resolveApp = require('./path')
 const { merge } = require('webpack-merge')
 const prodConfig = require('./webpack.prod')
@@ -18,7 +20,7 @@ const commonConfig = {
         // assetModuleFilename: 'img/[name].[hash:6][ext]'
     },
     resolve: {
-        extensions: ['.js', '.css', '.less', '.ts', '...'], //顺序优先级， ... 扩展运算符代表默认配置
+        extensions: ['.jsx', '.js', '.css', '.less', '.ts', '.tsx', '...'], //顺序优先级， ... 扩展运算符代表默认配置
         modules: [resolveApp('src'), 'node_modules'], //优先 src 目录下查找需要解析的文件，会大大节省查找时间
         alias: {
             '~': resolveApp('src'),
@@ -51,7 +53,7 @@ const commonConfig = {
                 filename: 'font/[name].[ext]'
             }
         }, {
-            test: /\.js$/,
+            test: /\.jsx?$/,
             include: resolveApp('src'),
             exclude: /node_modules/,
             use: {
@@ -69,7 +71,15 @@ const commonConfig = {
         new HtmlWebpackPlugin({
             title: 'study webpack',
             template: './public/index.html'
-        })
+        }),
+        // new webpack.DllReferencePlugin({
+        //     context: resolveApp('./'),
+        //     manifest: resolveApp('./dll/mainfest.json')
+        // }),
+        // new AddAssetHtmlPlugin({
+        //     outputPath: 'js',
+        //     filepath: resolveApp('./dll/dll_react.js'),
+        // })
     ],
     /**
      * 剥离不需要改动的一些依赖，大大节省打包构建的时间

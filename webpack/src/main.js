@@ -1,3 +1,7 @@
-import _ from "lodash";
+export function foo(a,b) { 
+    return a+b
+}
 
-console.log('mainJs', _.join(['mainJs']))
+export function bar(a,b) { 
+    return a*b
+}

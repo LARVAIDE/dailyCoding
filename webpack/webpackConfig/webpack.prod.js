@@ -17,8 +17,7 @@ module.exports = {
                 {
                     loader: 'css-loader',
                     options: {
-                        esModule: false,
-                        importLoaders: 1
+                        importLoaders: 1 //向前找一个loader来处理文件，场景：使用@import()导入
                     }
                 },
                 'postcss-loader'
@@ -35,7 +34,7 @@ module.exports = {
         }]
     },
     optimization: {
-        minimize: true,
+        minimize: true, //false不使用minimizer
         usedExports: true, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
         minimizer: [
             new terserWebpackPlugin({

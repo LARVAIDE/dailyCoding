@@ -1,12 +1,11 @@
-import { foo, bar, default as a } from "./modules.mjs";
+import a, { foo, bar } from "./modules.mjs";
+import name from "./common.js";
 
-console.log(foo, bar, a)
+console.log(foo, bar, a, name)
+
+setTimeout(() => { 
+    console.log(foo, bar, a)
+}, 1500)
 
 
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-
-const __dirname = fileURLToPath(import.meta.url);
-console.log(__dirname)
-const __filename = dirname(__dirname)
-console.log(__filename)
+ 
