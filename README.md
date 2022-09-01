@@ -1,14 +1,15 @@
 # 项目描述
 ---
+git registry：https://e.coding.net/larvide/test/dailyCoding.git
 - 用来记录新技术学习
 - 源码阅读
-> markdown参考
-> [基本语法](https://www.markdown.xyz/basic-syntax/)
-> [表情符号](https://gist.github.com/rxaviers/7360908)
+- markdown参考
+    > [markdown基本语法](https://www.markdown.xyz/basic-syntax/)
+    > [markdown表情符号](https://gist.github.com/rxaviers/7360908)
 
-## webpack@5
+# webpack@5
 ---
- 配置以及调优
+配置以及调优
 * ### asset
      *  asset/resource 将资源分割为单独的文件，并导出 url，类似之前的 file-loader 的功能.
      *  asset/inline 将资源导出为 dataUrl 的形式，类似之前的 url-loader 的小于 limit 参数时功能.
@@ -55,20 +56,22 @@
     使用[TerserWebpackPlugin](https://webpack.docschina.org/plugins/terser-webpack-plugin/)压缩js代码
 * ### treeShaking
     * #### usedExports
-    标记未使用的代码(unused harmony exports...)，结合minimizer-->terserWebpackPlugin实现tree shaking
+        标记未使用的代码(unused harmony exports...)，结合minimizer-->terserWebpackPlugin实现tree shaking
     * #### sideEffects
-    在package.json中设置`"sideEffects": false`，去除所有模块副作用，包括整个css文件
+        在package.json中设置`"sideEffects": false`，去除所有模块副作用，包括整个css文件
     可以设置为数组精准管理文件或单独在webpack config中的css规则设置，避免css被摇掉
     * #### PurgeCSSPlugin
-    [PurgeCSSPlugin](https://www.npmjs.com/package/purgecss-webpack-plugin) 用于css treeShaking，注意⚠️在本项目中当css选择器名称小于四个字母时不生效，其他地方不清楚
+        [PurgeCSSPlugin](https://www.npmjs.com/package/purgecss-webpack-plugin) 用于css treeShaking，注意⚠️在本项目中当css选择器名称小于四个字母时不生效，其他地方不清楚
 * ### compression
-    使用[CompressionPlugin](https://www.npmjs.com/package/compression-webpack-plugin)压缩资源以供http Content-Encoding
+    使用[CompressionPlugin](https://www.npmjs.com/package/compression-webpack-plugin)压缩资源以供http传输压缩资源（Content-Encoding）
 * ### diy plugin
+    
 * ### diy loader
 
-## awsomeWebpack
+# awsomeWebpack
 ---
 webpack源码阅读
+### commonJS模块打包
 
 
 ## dataStructures
