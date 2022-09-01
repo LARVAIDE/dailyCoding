@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './css/index.css'
 
 const App = () => { 
     const [title, setTitle] = useState('深圳今天下雨了')
@@ -14,7 +15,7 @@ const App = () => {
 
     return (
         <div>
-            <h2>{ title }</h2>
+            <h2 className="title">{ title }</h2>
         </div>
     )
 }

@@ -15,7 +15,7 @@
      *  asset/source 将资源导出为源码（source code）. 类似的 raw-loader 功能.
      *  asset 会根据文件大小来选择使用哪种类型，当文件小于 8 KB（默认） 的时候会使用 asset/inline，否则会使用 asset/resource
 * ### browserslist
-    根据[平台占有率](https://caniuse.com/usage-table)来执行兼容哪些平台，例如：babel、postcss。
+    根据[平台占有率](https://caniuse.com/usage-table)来让babel、postcss等执行兼容哪些平台
     ```
         > 0.25%
         last 2 version
@@ -53,11 +53,16 @@
     使用 [splitchunks](https://webpack.docschina.org/configuration/optimization/#optimizationsplitchunks) 来拆分代码块，用于按需加载，配合preload和prefetch，优化页面性能
 * ### terserpugin
     使用[TerserWebpackPlugin](https://webpack.docschina.org/plugins/terser-webpack-plugin/)压缩js代码
-* ### minicssextraPlugin
-* ### usedExports
-* ### sideEffects
 * ### treeShaking
+    * #### usedExports
+    标记未使用的代码(unused harmony exports...)，结合minimizer-->terserWebpackPlugin实现tree shaking
+    * #### sideEffects
+    在package.json中设置`"sideEffects": false`，去除所有模块副作用，包括整个css文件
+    可以设置为数组精准管理文件或单独在webpack config中的css规则设置，避免css被摇掉
+    * #### PurgeCSSPlugin
+    [PurgeCSSPlugin](https://www.npmjs.com/package/purgecss-webpack-plugin) 用于css treeShaking，注意⚠️在本项目中当css选择器名称小于四个字母时不生效，其他地方不清楚
 * ### compression
+    使用[CompressionPlugin](https://www.npmjs.com/package/compression-webpack-plugin)压缩资源以供http Content-Encoding
 * ### diy plugin
 * ### diy loader
 

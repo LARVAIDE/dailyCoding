@@ -5,6 +5,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const terserWebpackPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require("compression-webpack-plugin");
+const PurgeCSSPlugin = require('purgecss-webpack-plugin')
+const resolveApp = require('./path')
+const glob = require('glob')
 
 module.exports = {
     mode: 'production',
@@ -22,7 +25,7 @@ module.exports = {
                 },
                 'postcss-loader'
             ],
-            sideEffects: true
+            sideEffects: true //避免css被treeshaking
         }, {
             test: /\.less$/,
             use: [
@@ -34,8 +37,8 @@ module.exports = {
         }]
     },
     optimization: {
-        minimize: true, //false不使用minimizer
         usedExports: true, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
+        minimize: true, //false不使用minimizer
         minimizer: [
             new terserWebpackPlugin({
                 extractComments: false
@@ -91,7 +94,11 @@ module.exports = {
             }]
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[contenthash:8].css'
+            filename: 'css/[name].[contenthash:8].css',
+            chunkFilename: "css/[name].[contenthash:8].css"
+        }),
+        new PurgeCSSPlugin({
+            paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true })
         }),
         // new webpack.optimize.ModuleConcatenationPlugin(), //在使用 tree shaking 时必须有 ModuleConcatenationPlugin 的支持，production模式默认启用了，其他模式需要手动引入
         new CompressionPlugin({
