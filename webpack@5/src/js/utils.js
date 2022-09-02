@@ -1,6 +1,7 @@
-const el = document.createElement('div')
-el.innerText = '按需加载'
+import React from "react";
 
-module.exports = el
+const Foo = () => {
+    return <div>动态加载的组件</div>
+}
 
-
+export default Foo

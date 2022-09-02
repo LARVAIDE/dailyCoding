@@ -37,8 +37,8 @@ module.exports = {
         }]
     },
     optimization: {
-        usedExports: true, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
-        minimize: true, //false不使用minimizer
+        usedExports: false, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
+        minimize: false, //false不使用minimizer
         minimizer: [
             new terserWebpackPlugin({
                 extractComments: false

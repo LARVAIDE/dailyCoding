@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const { DefinePlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
+const MyPlugin = require('./myPlugin')
 const resolveApp = require('./path')
 const { merge } = require('webpack-merge')
 const prodConfig = require('./webpack.prod')
@@ -9,8 +10,7 @@ const devConfig = require('./webpack.dev')
 
 const commonConfig = {
     entry: {
-        index: './src/index.js',
-        main: './src/main.js'
+        index: './src/index.js'
     },
     output: {
         filename: 'js/[name].bundle.js',
@@ -62,6 +62,11 @@ const commonConfig = {
                     cacheDirectory: true
                 }
             }
+        }, {
+            test: /.md$/,
+            use: [
+                './markdown-loader'
+            ]
         }]
     },
     plugins: [
@@ -72,6 +77,7 @@ const commonConfig = {
             title: 'study webpack',
             template: './public/index.html'
         }),
+        new MyPlugin()
         // new webpack.DllReferencePlugin({
         //     context: resolveApp('./'),
         //     manifest: resolveApp('./dll/mainfest.json')

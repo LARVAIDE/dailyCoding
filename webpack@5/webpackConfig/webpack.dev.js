@@ -1,9 +1,10 @@
 module.exports = {
     mode: 'development',
-    devtool: false,//'cheap-module-source-map'
+    devtool: 'cheap-module-source-map',
+    target: 'web',
     devServer: {
         hot: true,
-        port: 8080,
+        port: 8088,
         historyApiFallback: true,
         proxy: {
             '/api': {
@@ -28,7 +29,8 @@ module.exports = {
                     }
                 }, 
                 'postcss-loader'
-            ]
+            ],
+            sideEffects: true
         }, {
             test: /\.less$/,
             use: [

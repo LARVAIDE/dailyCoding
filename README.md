@@ -1,16 +1,25 @@
 # 项目描述
----
 git registry：https://e.coding.net/larvide/test/dailyCoding.git
 - 用来记录新技术学习
 - 源码阅读
 - markdown参考
-    > [markdown基本语法](https://www.markdown.xyz/basic-syntax/)
-    > [markdown表情符号](https://gist.github.com/rxaviers/7360908)
+    * [markdown基本语法](https://www.markdown.xyz/basic-syntax/)
+    * [markdown表情符号](https://gist.github.com/rxaviers/7360908)
 
 # webpack@5
----
 配置以及调优
+* ### HMR
+    mode为`development`时会和`.browserslistrc`冲突，此时设置`target: 'web'`
+    js模块热更新：
+    ```
+    if(module.hot){
+        module.hot.accept(['./foo.js', './utils.js', 启用热更新的模块...], ()=>{
+            console.log('更新完成回调')
+        })
+    }
+    ```
 * ### asset
+    [asset资源模块](https://webpack.docschina.org/guides/asset-modules/)允许使用资源文件（字体，图标等）而无需配置额外 loader
      *  asset/resource 将资源分割为单独的文件，并导出 url，类似之前的 file-loader 的功能.
      *  asset/inline 将资源导出为 dataUrl 的形式，类似之前的 url-loader 的小于 limit 参数时功能.
      *  asset/source 将资源导出为源码（source code）. 类似的 raw-loader 功能.
@@ -18,9 +27,9 @@ git registry：https://e.coding.net/larvide/test/dailyCoding.git
 * ### browserslist
     根据[平台占有率](https://caniuse.com/usage-table)来让babel、postcss等执行兼容哪些平台
     ```
-        > 0.25%
-        last 2 version
-        not dead
+      > 0.25%
+      last 2 version
+      not dead
     ```
 * ### postcss
     [postcss工具集使用文档](https://github.com/postcss/postcss/blob/main/docs/README-cn.md)
@@ -30,8 +39,8 @@ git registry：https://e.coding.net/larvide/test/dailyCoding.git
 * ### polyfill
     在webpack@5版本中，要使用[polyfill](https://babeljs.io/docs/en/babel-polyfill)需要手动引入。
     ```
-        import "core-js/stable";
-        import "regenerator-runtime";
+      import "core-js/stable";
+      import "regenerator-runtime";
     ```
 * ### external
     
@@ -51,6 +60,7 @@ git registry：https://e.coding.net/larvide/test/dailyCoding.git
     }
     ```
 * ### splitchunks
+    react[代码分割](https://zh-hans.reactjs.org/docs/code-splitting.html#reactlazy)和动态加载组件
     使用 [splitchunks](https://webpack.docschina.org/configuration/optimization/#optimizationsplitchunks) 来拆分代码块，用于按需加载，配合preload和prefetch，优化页面性能
 * ### terserpugin
     使用[TerserWebpackPlugin](https://webpack.docschina.org/plugins/terser-webpack-plugin/)压缩js代码
@@ -64,64 +74,73 @@ git registry：https://e.coding.net/larvide/test/dailyCoding.git
         [PurgeCSSPlugin](https://www.npmjs.com/package/purgecss-webpack-plugin) 用于css treeShaking，注意⚠️在本项目中当css选择器名称小于四个字母时不生效，其他地方不清楚
 * ### compression
     使用[CompressionPlugin](https://www.npmjs.com/package/compression-webpack-plugin)压缩资源以供http传输压缩资源（Content-Encoding）
-* ### diy plugin
+* ### plugin
+    [Compiler](https://webpack.docschina.org/api/compiler-hooks/)模块是 webpack 的主要引擎，扩展自 Tapable 类，用来注册和调用插件。
     
-* ### diy loader
-
+* ### loader
+    * 作用：处理/编译转换资源文件，分为以下3类：
+      1. 编译转换类
+          将资源模块转换为js模块，例如：css-loader，babel-loader
+      2. 文件操作类
+          将资源模块拷贝到输出目录，导出访问目录的路径，例如：file-loader
+      3. 代码检查类
+          统一代码风格，提高代码质量，例如：eslint-loader
+    * 开发一个loader:
+    loader在处理资源时，类似于使用管道操作，在这个过程中可以链式使用多个loader，之后处理结果必须是js代码。
 # awsomeWebpack
----
+
 webpack源码阅读
 ### commonJS模块打包
 
+### ESM模块打包
 
 ## dataStructures
----
+
 * 栈
 * 链表
 * 队列
 * 散列表
-
 ## ES6
----
+
 ES6+学习
 
 ## exsample-cli
----
+
 脚手架
 
 
 ## FunctionalProgramming
----
+
 函数式编程思想学习
 
 
 ## gulp
----
+
 gulp学习
 
 
 ## mobx-tutorial
----
+
 mobx@6
 
 
 ## react-ssr
----
+
 尝试自己搭个react服务端渲染
 
 
 ## rollup
----
+
 rollup学习
 
 
 ## source-load
----
-性能优化测试-----资源加载
+
+性能优化测试--资源加载
 
 
 ## TS
----
+
 typescript学习
 
 

@@ -1,6 +1,5 @@
 module.exports = {
-    presets: [
-        '@babel/preset-react',
+    "presets": [
         [
             '@babel/preset-env',
             {
@@ -11,9 +10,13 @@ module.exports = {
                  * 
                  * 在需要使用polyfill的代码里手动引入"core-js/stable"
                  */
-                "useBuiltIns": "usage",
+                "useBuiltIns": "entry",
                 "corejs": 3
             }
-        ]
+        ],
+        ['@babel/preset-react']
+    ],
+    "plugins": [
+        ['@babel/plugin-syntax-dynamic-import']
     ]
 }

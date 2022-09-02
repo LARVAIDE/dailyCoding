@@ -1,12 +1,16 @@
-body{
+body {
     background-color: rgb(183, 255, 231);
 }
-.title{
+
+.title {
     color: #12345678;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-.l111{
+input[name='hmr']{
+    color: red;
+}
+
+.l111 {
     font-size: 20px;
 }
-

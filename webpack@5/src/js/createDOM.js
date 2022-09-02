@@ -1,4 +1,4 @@
-import '../styles/index'
+import '../css/index'
 
 function H2() {
     const container = document.createElement('h2')

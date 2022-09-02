@@ -24,8 +24,4 @@ import React from "react";
 import { createRoot } from 'react-dom/client';
 import App from './App';
 
-// import { foo, bar } from "./main";
-// console.log(foo(3, 10))
-// console.log(bar(3 ,10))
-
 createRoot(document.getElementById('root')).render(<App />)
