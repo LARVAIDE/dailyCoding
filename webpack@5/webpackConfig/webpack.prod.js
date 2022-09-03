@@ -37,8 +37,8 @@ module.exports = {
         }]
     },
     optimization: {
-        usedExports: false, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
-        minimize: false, //false不使用minimizer
+        usedExports: true, //标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
+        minimize: true, //false不使用minimizer
         minimizer: [
             new terserWebpackPlugin({
                 extractComments: false
@@ -46,36 +46,23 @@ module.exports = {
             new CssMinimizerPlugin()
         ],
         chunkIds: 'deterministic',
+        runtimeChunk: true,
         splitChunks: {
-            cacheGroups: { // 配置提取模块的方案
-                default: false,
-                styles: {
-                    name: 'styles',
-                    test: /\.(s?css|less|sass)$/,
-                    chunks: 'all',
-                    enforce: true,
-                    priority: 10,
-                },
-                common: {
-                    name: 'chunk-common',
-                    chunks: 'all',
-                    minChunks: 2,
-                    maxInitialRequests: 5,
-                    minSize: 0,
-                    priority: 1,
-                    enforce: true,
-                    reuseExistingChunk: true,
-                },
-                vendors: {
-                    name: 'chunk-vendors',
+            chunks: 'all',
+            minSize: 20000,
+            minChunks: 1,
+            cacheGroups: {
+                dlVendors: {
                     test: /[\\/]node_modules[\\/]/,
-                    chunks: 'all',
-                    priority: 2,
-                    enforce: true,
-                    reuseExistingChunk: true,
+                    filename: 'js/[id]_vendor.js',
+                    priority: -10,
+                },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
                 }
-            },
-        },
+            }
+        }
     },
     /**
      * 缓存生成的 webpack 模块和 chunk，来改善构建速度
@@ -101,9 +88,9 @@ module.exports = {
             paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true })
         }),
         // new webpack.optimize.ModuleConcatenationPlugin(), //在使用 tree shaking 时必须有 ModuleConcatenationPlugin 的支持，production模式默认启用了，其他模式需要手动引入
-        new CompressionPlugin({
-            test: /\.(css|js|ttf)$/,
-            algorithm: 'gzip'
-        })
+        // new CompressionPlugin({
+        //     test: /\.(css|js|ttf)$/,
+        //     algorithm: 'gzip'
+        // })
     ]
 } 

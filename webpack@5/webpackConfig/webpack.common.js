@@ -10,12 +10,13 @@ const devConfig = require('./webpack.dev')
 
 const commonConfig = {
     entry: {
-        index: './src/index.js'
+        index: './src/index.js',
+        // shared: ['react', 'react-dom'], //多入口三方库分离
     },
     output: {
-        filename: 'js/[name].bundle.js',
+        filename: 'js/[name].[contenthash:8].bundle.js',
         path: resolveApp('./dist'),
-        chunkFilename: 'js/chunk_[name].js'
+        chunkFilename: 'js/[name].[contenthash:8].bundle.js',
         // publicPath: 'https://cdn.example.com/assets/[fullhash]'
         // assetModuleFilename: 'img/[name].[hash:6][ext]'
     },
@@ -39,7 +40,7 @@ const commonConfig = {
             test: /\.(jpe?g|svg|png|gif|webp)$/i,
             type: 'asset', 
             generator: {
-                filename: 'img/[name].[contenthash:6][ext]'
+                filename: 'img/[name].[contenthash:8][ext]'
             },
             parser: {
                 dataUrlCondition: {
@@ -88,10 +89,11 @@ const commonConfig = {
         // })
     ],
     /**
-     * 剥离不需要改动的一些依赖，大大节省打包构建的时间
+     * 排除三方包改用cdn
      */
     externals: {
-
+        'react': 'React',
+        'react-dom': 'ReactDOM',
     }
 } 
 

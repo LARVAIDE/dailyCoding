@@ -1,28 +1,38 @@
 import React, { Component, Suspense, useState } from "react";
 import './css/index.css';
-import "./js/foo";
 import MarkdownToHtml from "./pages/MarkdownToHtml/index";
 import jsobj from './img/jsobj.jpg'
 
 const App = () => {
     const [title, setTitle] = useState('深圳今天下雨了')
-    const [showDymic, setShowDymic] = useState(false) 
+    const [showDymic, setShowDymic] = useState(false)
 
-    if(module.hot){
+    if (module.hot) {
         module.hot.accept(['./js/foo.js', './js/utils.js'])
     }
     const OtherComponent = React.lazy(() => import(
         /* webpackChunkName: 'utils' */
         /* webpackPrefetch: true */
-        './js/utils'));
+        './js/utils')
+    );
+
+    const dymicModule = () => {
+        import(
+            /*webpackChunkName: 'foo'*/
+            /* webpackPrefetch: true */
+            "./js/foo").then(({ default: el }) => {
+                return el
+            })
+    }
 
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <div>
                 <h2 className="title">{title}</h2>
                 <input name='hmr' type="text" />
-                <button onClick={() => setShowDymic(true)}>动态加载</button>
-                { showDymic &&  <OtherComponent /> }
+                <button onClick={dymicModule}>动态加载模块</button>
+                <button onClick={() => setShowDymic(true)}>动态加载组件</button>
+                {showDymic && <OtherComponent />}
                 <MarkdownToHtml />
             </div>
             <picture>

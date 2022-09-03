@@ -1,5 +1,5 @@
 # 项目描述
-git registry：https://e.coding.net/larvide/test/dailyCoding.git
+git repository：https://e.coding.net/larvide/test/dailyCoding.git
 - 用来记录新技术学习
 - 源码阅读
 - markdown参考
@@ -61,7 +61,8 @@ git registry：https://e.coding.net/larvide/test/dailyCoding.git
     ```
 * ### splitchunks
     react[代码分割](https://zh-hans.reactjs.org/docs/code-splitting.html#reactlazy)和动态加载组件
-    使用 [splitchunks](https://webpack.docschina.org/configuration/optimization/#optimizationsplitchunks) 来拆分代码块，用于按需加载，配合preload和prefetch，优化页面性能
+    使用 [splitchunks](https://webpack.docschina.org/configuration/optimization/#optimizationsplitchunks) 来拆分代码块，配合动态加载+preload和prefetch，优化页面性能
+    runtimeChunk用于额外生成模块导入导出处理的文件，用于长效缓存
 * ### terserpugin
     使用[TerserWebpackPlugin](https://webpack.docschina.org/plugins/terser-webpack-plugin/)压缩js代码
 * ### treeShaking
