@@ -88,9 +88,19 @@ git repository：https://e.coding.net/larvide/test/dailyCoding.git
           统一代码风格，提高代码质量，例如：eslint-loader
     * 开发一个loader:
     loader在处理资源时，类似于使用管道操作，在这个过程中可以链式使用多个loader，之后处理结果必须是js代码。
-# awsomeWebpack
+# tapable
+Webpack是使用tapable的事件流来驱动编译，在编译过程中把不同的plugin串联起来，其中最为核心的是负责本次编译任务的compiler和负责创建bundles的completion，这两个都是tapable的实例对象。
+#### tapable的核心工作流程：
+- 实例化hook注册事件监听
+- 通过hook触发事件监听
+- 执行懒编译生成的代码
 
-webpack源码阅读
+#### hook本质是tapable的实例对象，hook分为同步和异步。hook的执行特点：
+- hook:普通钩子，监听相互独立不影响
+- BailHook:熔断钩子，某个监听返回非undefined时，后续逻辑不执行
+- WaterfallHook:瀑布钩子，上一个监听返回的值可以传给下一个监听
+- LoopHook:循环钩子，当前不返回false一直执行
+
 ### commonJS模块打包
 
 ### ESM模块打包
