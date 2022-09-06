@@ -2,11 +2,11 @@ const webpack = require('webpack')
 const { DefinePlugin } = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
-const MyPlugin = require('./myPlugin')
 const resolveApp = require('./path')
 const { merge } = require('webpack-merge')
 const prodConfig = require('./webpack.prod')
 const devConfig = require('./webpack.dev')
+const testConfig = require('./webpack.test')
 
 const commonConfig = {
     entry: {
@@ -78,7 +78,6 @@ const commonConfig = {
             title: 'study webpack',
             template: './public/index.html'
         }),
-        new MyPlugin()
         // new webpack.DllReferencePlugin({
         //     context: resolveApp('./'),
         //     manifest: resolveApp('./dll/mainfest.json')
@@ -98,8 +97,17 @@ const commonConfig = {
 } 
 
 module.exports = env => {
-    const isProd = env.production
-    process.env.NODE_ENV = isProd ? "production" : "development" //这里手动设置是因为默认process.env.NODE_ENV不能在配置文件里面获取
-    const config = isProd ? prodConfig : devConfig
-    return merge(commonConfig, config)
+    const TARGET = process.env.npm_lifecycle_event;
+    if(TARGET === 'start') {
+        process.env.NODE_ENV = "development";
+        return merge(commonConfig, devConfig)
+    }
+    if(TARGET === 'build') {
+        process.env.NODE_ENV = "production";
+        return merge(commonConfig, prodConfig)
+    }
+    if(TARGET === 'test') {
+        process.env.NODE_ENV = "development";
+        return merge(commonConfig, testConfig)
+    }
 }

@@ -1,3 +1,1 @@
-const foo = 'web'
-console.log('ssssss 11')
-export default foo
+module.exports = '懒加载分析'

@@ -6,7 +6,9 @@
   "scripts": {
     "dll": "webpack --config webpackConfig/webpack.dll.js",
     "build": "webpack --config webpackConfig/webpack.common.js --env production",
-    "start": "webpack serve --config webpackConfig/webpack.common.js --env development"
+    "test": "webpack --config webpackConfig/webpack.common.js --env test",
+    "start": "webpack serve --config webpackConfig/webpack.common.js --env development",
+    "serve": "serve ./dist"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +38,7 @@
     "mini-svg-data-uri": "^1.4.4",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.7.2",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "purgecss-webpack-plugin": "^4.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const chalk = require('chalk')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
@@ -6,6 +7,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const terserWebpackPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require("compression-webpack-plugin");
 const PurgeCSSPlugin = require('purgecss-webpack-plugin')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const resolveApp = require('./path')
 const glob = require('glob')
 
@@ -83,6 +85,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: "css/[name].[contenthash:8].css"
+        }),
+        new ProgressBarPlugin({
+            format: `  :msg [:bar] ${chalk.green.bold(':percent')} (:elapsed s)`
         }),
         new PurgeCSSPlugin({
             paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true })
