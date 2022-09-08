@@ -8,6 +8,7 @@ const terserWebpackPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require("compression-webpack-plugin");
 const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
+const AssetsCdnPrefreshWebpackPlugin = require('assets-cdn-prefresh-webpack-plugin')
 const resolveApp = require('./path')
 const glob = require('glob')
 
@@ -92,6 +93,9 @@ module.exports = {
         new PurgeCSSPlugin({
             paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true })
         }),
+        new AssetsCdnPrefreshWebpackPlugin({
+            publicPath: 'https://cdn.91zhen.com'
+        })
         // new webpack.optimize.ModuleConcatenationPlugin(), //在使用 tree shaking 时必须有 ModuleConcatenationPlugin 的支持，production模式默认启用了，其他模式需要手动引入
         // new CompressionPlugin({
         //     test: /\.(css|js|ttf)$/,

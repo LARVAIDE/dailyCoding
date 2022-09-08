@@ -1,0 +1,17 @@
+{
+  "name": "assets-cdn-prefresh-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Generate static resource URL for CDN refresh and preheating",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "cdn",
+    "prefresh"
+  ],
+  "author": "larvide",
+  "license": "ISC"
+}
