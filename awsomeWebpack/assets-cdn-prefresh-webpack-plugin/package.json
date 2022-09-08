@@ -1,10 +1,13 @@
 {
   "name": "assets-cdn-prefresh-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Generate static resource URL for CDN refresh and preheating",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   },
   "keywords": [
     "webpack",
@@ -12,6 +15,9 @@
     "cdn",
     "prefresh"
   ],
-  "author": "larvide",
+  "peerDependencies": {
+    "webpack": ">=4.0.0 <6.0.0"
+  },
+  "author": "larvide <larvaide@gmail.com>",
   "license": "ISC"
 }

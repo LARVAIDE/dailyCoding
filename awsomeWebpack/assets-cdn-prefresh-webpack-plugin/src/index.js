@@ -32,8 +32,7 @@ function _validate(options) {
  */
  function _mergeOptions(options) {
     const defaultOptions = {
-        publicPath: 'https://cdn.example.com',
-        fileName: 'CDN_SOURCE_PATH.md'
+        publicPath: 'https://cdn.example.com'
     }
     if (_validate(options)) {
         return Object.assign(defaultOptions, options);
@@ -44,13 +43,14 @@ function _validate(options) {
 class AssetsCdnPrefreshWebpackPlugin {
     constructor(options) {
         this.options = options || {}
-        this.content = '\`\`\`cdn刷新预热\`\`\`\n';
+        this.content = '\`\`\`***** CDN refresh and preheating *****\`\`\`\n';
         this.apply = this.apply.bind(this);
     }
 
     apply(compiler) {
         const options = _mergeOptions(this.options)
-        const { publicPath, fileName } = options;
+        const { publicPath } = options;
+        const fileName = 'CDN_SOURCE_PATH.md'
         const hooks = compiler.hooks;
 
         hooks.assetEmitted.tap('AssetsCdnPrefreshWebpackPlugin', emittedAssets => {           
