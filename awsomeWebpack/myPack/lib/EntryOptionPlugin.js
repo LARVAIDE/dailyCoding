@@ -7,7 +7,7 @@ const itemToPlugin = function(context, entry, name) {
 class EntryOptionPlugin{
     apply(compiler) {
         compiler.hooks.entryOption.tap('EntryOptionPlugin', (context, entry) => {
-            itemToPlugin(context, entry, 'main').apply(compiler)
+            itemToPlugin('/Users/larvide/dailyCoding/awsomeWebpack', entry, 'main').apply(compiler)
         })
     }
 }

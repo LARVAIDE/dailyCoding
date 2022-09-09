@@ -8,7 +8,7 @@ const terserWebpackPlugin = require('terser-webpack-plugin')
 const CompressionPlugin = require("compression-webpack-plugin");
 const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-const AssetsCdnPrefreshWebpackPlugin = require('assets-cdn-prefresh-webpack-plugin')
+const AssetsCdnPrefreshWebpackPlugin = require('../assets-cdn-prefresh-webpack-plugin')
 const resolveApp = require('./path')
 const glob = require('glob')
 

@@ -43,6 +43,7 @@ function _validate(options) {
 class AssetsCdnPrefreshWebpackPlugin {
     constructor(options) {
         this.options = options || {}
+        this.showMakeFile = false
         this.content = '\`\`\`***** CDN refresh and preheating *****\`\`\`\n';
         this.apply = this.apply.bind(this);
     }
@@ -50,7 +51,6 @@ class AssetsCdnPrefreshWebpackPlugin {
     apply(compiler) {
         const options = _mergeOptions(this.options)
         const { publicPath } = options;
-        const fileName = 'CDN_SOURCE_PATH.md'
         const hooks = compiler.hooks;
 
         hooks.assetEmitted.tap('AssetsCdnPrefreshWebpackPlugin', emittedAssets => {           
@@ -60,7 +60,8 @@ class AssetsCdnPrefreshWebpackPlugin {
         hooks.done.tapAsync('AssetsCdnPrefreshWebpackPlugin', compilation => {
             const { outputOptions } = compilation.compilation
             const { path } = outputOptions
-            this.writeFile(path, fileName);
+            this.writeFile(path);
+            this.showMakeFile = false
         })
     }
 
@@ -71,24 +72,25 @@ class AssetsCdnPrefreshWebpackPlugin {
      * @returns 
      */
     addAssetsCdnPrefreshPath(publicPath, emittedAssets) {
-        const excludeHtml = /\.html$/ig
-        if (excludeHtml.test(emittedAssets)) { 
-            return
-        }
+        const excludeFileType = /\.[html]$/ig
+        if (excludeFileType.test(emittedAssets)) return null
+        if(!this.showMakeFile) this.showMakeFile = true
         this.content += `${publicPath}/${emittedAssets}\n`
     }
 
     /**
      * 
      * @param {*} path 
-     * @param {*} fileName 
      */
-    writeFile(path, fileName) {
-        process.nextTick(() => {
-            fs.writeFile(`${path}/${fileName}`, this.content, { encoding: 'utf-8' }, () => {
-                console.log(`\nThe ${fileName} has been generated!🎉🎉🎉\n`);
-            });
-        })
+    writeFile(path) {
+        if(this.showMakeFile){
+            const fileName = 'CDN_SOURCE_PATH.md'
+            process.nextTick(() => {
+                fs.writeFile(`${path}/${fileName}`, this.content, { encoding: 'utf-8' }, () => {
+                    console.log(`\nThe ${fileName} has been generated!🎉🎉🎉\n`);
+                });
+            })
+        }
     }
 }
 

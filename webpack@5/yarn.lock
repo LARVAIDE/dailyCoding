@@ -1571,11 +1571,6 @@
   "resolved" "https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz"
   "version" "1.0.3"
 
-"assets-cdn-prefresh-webpack-plugin@^1.0.0":
-  "integrity" "sha512-VC2aOUG7BpijqSfE0iKWSWtoBFzDnY+38tGWP5aO91xRJ58BjN33a9N/MM3nNCwmfq40fjRzGukMJy+lCWkJUw=="
-  "resolved" "https://registry.npmjs.org/assets-cdn-prefresh-webpack-plugin/-/assets-cdn-prefresh-webpack-plugin-1.0.0.tgz"
-  "version" "1.0.0"
-
 "autoprefixer@^10.4.7":
   "integrity" "sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA=="
   "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.7.tgz"

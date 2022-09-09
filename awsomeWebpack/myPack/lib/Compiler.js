@@ -7,6 +7,7 @@ const {
 } = require('tapable')
 const NormalModuleFactory = require('./NormalModuleFactory')
 const Compilation = require('./Compilation')
+const Stats = require('./Stats')
 
 class Compiler {
     constructor(context) {
@@ -36,16 +37,7 @@ class Compiler {
         }
         const onCompiled = function(err, compilation){
             console.log('onCompiled>>>>>>>>>>>>')
-            finallCallback(err, {
-                toJson(){
-                    return {
-                        entries: [],
-                        chunks: [], 
-                        modules: [], 
-                        assets: []
-                    }
-                }
-            })
+            finallCallback(err, new Stats(compilation))
         }
         this.hooks.beforeRun.callAsync(this, err => {
             this.hooks.run.callAsync(this, err => {
@@ -62,7 +54,7 @@ class Compiler {
 
             this.hooks.make.callAsync(compilation, err => {
                 console.log('make监听执行了》〉》〉》〉》')
-                callback()
+                callback(err, compilation)
             })
         })
     }
@@ -76,6 +68,9 @@ class Compiler {
 
     newCompilation(params) {
         const compilation = this.createCompilation()
+        this.hooks.thisCompilation.call(compilation, params)
+        this.hooks.compilation.call(compilation, params)
+        return compilation
     }
 
     createCompilation(){

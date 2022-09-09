@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=12.0.0"
   },
   "keywords": [
     "webpack",
@@ -18,6 +18,6 @@
   "peerDependencies": {
     "webpack": ">=4.0.0 <6.0.0"
   },
-  "author": "larvide <larvaide@gmail.com>",
-  "license": "ISC"
+  "author": "larvaide@gmail.com",
+  "license": "MIT"
 }
