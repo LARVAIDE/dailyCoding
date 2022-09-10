@@ -1,42 +1,27 @@
-/**
- * webpack.js核心功能
- * @param {*} options 
- */
-
 const Compiler = require('./Compiler')
 const NodeEnvironmentPlugin = require('./node/NodeEnvironmentPlugin')
 const WebpackOptionsApply = require('./WebpackOptionsApply')
 
-const webpack = function(options){
-    /**
-     * 此处省略一些对options的校验。。。
-     */
-    // ========================
-    /**
-     * 实例化complier
-     * context的值为process.cwd()
-     * 获取项目目录，和entry拼接，定位入口文件
-     */
-    let complier = new Compiler(options.context)
-    complier.options = options
+const webpack = function (options) {
+  // 01 实例化 compiler 对象
+  let compiler = new Compiler(options.context)
+  compiler.options = options
 
-    // 初始化NodeEnvironmentPlugin，让complier具备文件读写能力
-    // createCompiler()
-    new NodeEnvironmentPlugin().apply(complier)
-    // 挂载plugins至complier
-    if(options.plugins && Array.isArray(options.plugins)){
-        for (const plugin of options.plugins) {
-            plugin.apply(Compiler)
-        }
+  // 02 初始化 NodeEnvironmentPlugin(让compiler具体文件读写能力)
+  new NodeEnvironmentPlugin().apply(compiler)
+
+  // 03 挂载所有 plugins 插件至 compiler 对象身上 
+  if (options.plugins && Array.isArray(options.plugins)) {
+    for (const plugin of options.plugins) {
+      plugin.apply(compiler)
     }
-    /**
-     * 挂载webpack内置的插件，例如：处理入口文件
-     * 里面有区分单入口和多入口
-     */
-    complier.options = new WebpackOptionsApply().process(options, complier);
+  }
 
-    // 返回complier
-    return complier
+  // 04 挂载所有 webpack 内置的插件（入口）
+  new WebpackOptionsApply().process(options, compiler);
+
+  // 05 返回 compiler 对象即可
+  return compiler
 }
 
 module.exports = webpack

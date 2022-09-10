@@ -1,15 +1,15 @@
-const SingleEntryPlugin = require('./SingleEntryPlugin')
+const SingleEntryPlugin = require("./SingleEntryPlugin")
 
-const itemToPlugin = function(context, entry, name) {
-    return new SingleEntryPlugin(context, entry, name)
+const itemToPlugin = function (context, item, name) {
+  return new SingleEntryPlugin(context, item, name)
 }
 
-class EntryOptionPlugin{
-    apply(compiler) {
-        compiler.hooks.entryOption.tap('EntryOptionPlugin', (context, entry) => {
-            itemToPlugin('/Users/larvide/dailyCoding/awsomeWebpack', entry, 'main').apply(compiler)
-        })
-    }
+class EntryOptionPlugin {
+  apply(compiler) {
+    compiler.hooks.entryOption.tap('EntryOptionPlugin', (context, entry) => {
+      itemToPlugin(context, entry, "main").apply(compiler)
+    })
+  }
 }
 
 module.exports = EntryOptionPlugin

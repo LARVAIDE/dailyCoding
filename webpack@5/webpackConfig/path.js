@@ -1,11 +1,11 @@
-const path = require('path')
+const path = require("path");
 
-const rootDir = process.cwd()
+const rootDir = process.cwd();
 
-console.log(rootDir)
+console.log(rootDir);
 
 const resolveApp = (resolvePath) => {
-    return path.resolve(rootDir, resolvePath)
-}
+  return path.resolve(rootDir, resolvePath);
+};
 
-module.exports = resolveApp
+module.exports = resolveApp;

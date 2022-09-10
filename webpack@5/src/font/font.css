@@ -1,25 +1,25 @@
 @font-face {
-    font-family: "harmonyosBold";
-    src: url('HarmonyOS_Sans_SC_Bold.ttf');
+  font-family: "harmonyosBold";
+  src: url("HarmonyOS_Sans_SC_Bold.ttf");
 }
 
 @font-face {
-    font-family: "harmonyosMedium";
-    src: url('HarmonyOS_Sans_SC_Medium.ttf');
+  font-family: "harmonyosMedium";
+  src: url("HarmonyOS_Sans_SC_Medium.ttf");
 }
 
 .harmBoldfont {
-    font-family: 'harmonyosBold' !important;
-    font-size: 16px;
-    font-style: normal;
+  font-family: "harmonyosBold" !important;
+  font-size: 16px;
+  font-style: normal;
 }
 
 .harmMediumfont {
-    font-family: 'harmonyosMedium' !important;
-    font-size: 30px;
-    font-style: normal;
+  font-family: "harmonyosMedium" !important;
+  font-size: 30px;
+  font-style: normal;
 }
 
-.icon-publish::before{
-    content: '\e602';
+.icon-publish::before {
+  content: "\e602";
 }

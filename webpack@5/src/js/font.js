@@ -1,11 +1,11 @@
-import '../font/font'
+import "../font/font";
 function Font() {
-    const container = document.createElement('div')
-    const txt = document.createElement('span')
-    txt.className = 'harmMediumfont icon-publish'
-    txt.textContent = 'ssssss'
-    container.appendChild(txt)
-    return container
+  const container = document.createElement("div");
+  const txt = document.createElement("span");
+  txt.className = "harmMediumfont icon-publish";
+  txt.textContent = "ssssss";
+  container.appendChild(txt);
+  return container;
 }
 
-document.body.appendChild(Font())
+document.body.appendChild(Font());

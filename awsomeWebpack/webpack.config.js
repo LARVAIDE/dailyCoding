@@ -4,7 +4,7 @@ module.exports = {
     mode: 'development',
     devtool: false,
     entry: './src/index.js',
-    context: process.cwd(),
+    context: path.resolve(__dirname, ''),
     output: {
         filename: 'build.js',
         path: path.resolve(__dirname, './dist'),
