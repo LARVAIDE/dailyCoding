@@ -1,5 +1,5 @@
 {
-  "name": "awsomeWebpack",
+  "name": "awsome-webpack",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,7 +7,9 @@
     "start": "webpack"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.0",
     "@babel/generator": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
     "@babel/traverse": "^7.19.0",
     "@babel/types": "^7.19.0",
     "babylon": "^6.18.0",

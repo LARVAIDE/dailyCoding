@@ -9,5 +9,5 @@ const complier = webpack(options)
 
 complier.run(function(err, stats){
     console.log(err)
-    console.log(stats)
+    // console.log(stats)
 })
