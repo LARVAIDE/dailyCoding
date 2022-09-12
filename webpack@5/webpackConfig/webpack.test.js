@@ -8,6 +8,7 @@ module.exports = {
     index: './src/test.js'
   },
   mode: 'development',
+  profile: true,
   devtool: false,
   module: {
     rules: [

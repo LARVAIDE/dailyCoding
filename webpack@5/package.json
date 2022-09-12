@@ -6,7 +6,7 @@
   "scripts": {
     "dll": "webpack --config webpackConfig/webpack.dll.js",
     "build": "webpack --config webpackConfig/webpack.common.js --env production",
-    "test": "webpack --config webpackConfig/webpack.common.js --env test",
+    "test": "webpack --config webpackConfig/webpack.common.js --env test --json=stats.json",
     "start": "webpack serve --config webpackConfig/webpack.common.js --env development",
     "serve": "serve ./dist"
   },

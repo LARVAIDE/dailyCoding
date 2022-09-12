@@ -1,0 +1,2506 @@
+{
+    "hash": "7ac6e384074b169b6352",
+    "version": "5.73.0",
+    "time": 645,
+    "builtAt": 1662997629212,
+    "publicPath": "auto",
+    "outputPath": "/Users/larvide/dailyCoding/webpack@5/dist",
+    "assetsByChunkName": {
+        "index": [
+            "js/index.0a020104.bundle.js"
+        ]
+    },
+    "assets": [
+        {
+            "type": "asset",
+            "name": "img/jsobj.fa9295e7.jpg",
+            "size": 101458,
+            "emitted": true,
+            "comparedForEmit": false,
+            "cached": false,
+            "info": {
+                "sourceFilename": "src/img/jsobj.jpg",
+                "immutable": true,
+                "contenthash": "fa9295e7",
+                "size": 101458
+            },
+            "chunkNames": [],
+            "chunkIdHints": [],
+            "auxiliaryChunkNames": [
+                "index"
+            ],
+            "auxiliaryChunkIdHints": [],
+            "related": {},
+            "chunks": [],
+            "auxiliaryChunks": [
+                "index"
+            ],
+            "isOverSizeLimit": false
+        },
+        {
+            "type": "asset",
+            "name": "js/index.0a020104.bundle.js",
+            "size": 6554,
+            "emitted": true,
+            "comparedForEmit": false,
+            "cached": false,
+            "info": {
+                "immutable": true,
+                "contenthash": "0a020104",
+                "javascriptModule": false,
+                "size": 6554
+            },
+            "chunkNames": [
+                "index"
+            ],
+            "chunkIdHints": [],
+            "auxiliaryChunkNames": [],
+            "auxiliaryChunkIdHints": [],
+            "related": {},
+            "chunks": [
+                "index"
+            ],
+            "auxiliaryChunks": [],
+            "isOverSizeLimit": false
+        },
+        {
+            "type": "asset",
+            "name": "index.html",
+            "size": 727,
+            "emitted": true,
+            "comparedForEmit": false,
+            "cached": false,
+            "info": {
+                "size": 727
+            },
+            "chunkNames": [],
+            "chunkIdHints": [],
+            "auxiliaryChunkNames": [],
+            "auxiliaryChunkIdHints": [],
+            "related": {},
+            "chunks": [],
+            "auxiliaryChunks": [],
+            "isOverSizeLimit": false
+        }
+    ],
+    "chunks": [
+        {
+            "rendered": true,
+            "initial": true,
+            "entry": true,
+            "recorded": false,
+            "size": 104692,
+            "sizes": {
+                "javascript": 1141,
+                "asset": 101458,
+                "runtime": 2093
+            },
+            "names": [
+                "index"
+            ],
+            "idHints": [],
+            "runtime": [
+                "index"
+            ],
+            "files": [
+                "js/index.0a020104.bundle.js"
+            ],
+            "auxiliaryFiles": [
+                "img/jsobj.fa9295e7.jpg"
+            ],
+            "hash": "cb97bd731717ffd71bd6",
+            "childrenByOrder": {},
+            "id": "index",
+            "siblings": [],
+            "parents": [],
+            "children": [],
+            "modules": [
+                {
+                    "type": "module",
+                    "moduleType": "javascript/auto",
+                    "layer": null,
+                    "size": 619,
+                    "sizes": {
+                        "javascript": 619
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "name": "./node_modules/react-dom/client.js",
+                    "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "index": 2,
+                    "preOrderIndex": 2,
+                    "index2": 2,
+                    "postOrderIndex": 2,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": true,
+                    "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "issuerName": "./src/test.js",
+                    "issuerPath": [
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "name": "./src/test.js",
+                            "profile": {
+                                "total": 273,
+                                "resolving": 28,
+                                "restoring": 0,
+                                "building": 245,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 28,
+                                "dependencies": 0
+                            },
+                            "id": "./src/test.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 10,
+                        "resolving": 4,
+                        "restoring": 0,
+                        "building": 6,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 4,
+                        "dependencies": 0
+                    },
+                    "id": "./node_modules/react-dom/client.js",
+                    "issuerId": "./src/test.js",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony side effect evaluation",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "react-dom/client",
+                            "loc": "2:0-46",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        },
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony import specifier",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "react-dom/client",
+                            "loc": "4:0-10",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": [
+                        "createRoot",
+                        "hydrateRoot"
+                    ],
+                    "optimizationBailout": [],
+                    "depth": 1
+                },
+                {
+                    "type": "module",
+                    "moduleType": "asset",
+                    "layer": null,
+                    "size": 42,
+                    "sizes": {
+                        "javascript": 42,
+                        "asset": 101458
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "asset|/Users/larvide/dailyCoding/webpack@5/src/img/jsobj.jpg",
+                    "name": "./src/img/jsobj.jpg",
+                    "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/img/jsobj.jpg",
+                    "index": 5,
+                    "preOrderIndex": 5,
+                    "index2": 3,
+                    "postOrderIndex": 3,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": true,
+                    "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "issuerName": "./src/pages/imgModule/index.jsx",
+                    "issuerPath": [
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "name": "./src/test.js",
+                            "profile": {
+                                "total": 273,
+                                "resolving": 28,
+                                "restoring": 0,
+                                "building": 245,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 28,
+                                "dependencies": 0
+                            },
+                            "id": "./src/test.js"
+                        },
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                            "name": "./src/pages/imgModule/index.jsx",
+                            "profile": {
+                                "total": 15,
+                                "resolving": 12,
+                                "restoring": 0,
+                                "building": 3,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 12,
+                                "dependencies": 0
+                            },
+                            "id": "./src/pages/imgModule/index.jsx"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 3,
+                        "resolving": 2,
+                        "restoring": 0,
+                        "building": 1,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 2,
+                        "dependencies": 0
+                    },
+                    "id": "./src/img/jsobj.jpg",
+                    "issuerId": "./src/pages/imgModule/index.jsx",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                            "module": "./src/pages/imgModule/index.jsx",
+                            "moduleName": "./src/pages/imgModule/index.jsx",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                            "resolvedModule": "./src/pages/imgModule/index.jsx",
+                            "type": "harmony side effect evaluation",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "img/jsobj.jpg",
+                            "loc": "1:0-34",
+                            "moduleId": "./src/pages/imgModule/index.jsx",
+                            "resolvedModuleId": "./src/pages/imgModule/index.jsx"
+                        },
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                            "module": "./src/pages/imgModule/index.jsx",
+                            "moduleName": "./src/pages/imgModule/index.jsx",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                            "resolvedModule": "./src/pages/imgModule/index.jsx",
+                            "type": "harmony import specifier",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "img/jsobj.jpg",
+                            "loc": "5:9-14",
+                            "moduleId": "./src/pages/imgModule/index.jsx",
+                            "resolvedModuleId": "./src/pages/imgModule/index.jsx"
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": 2
+                },
+                {
+                    "type": "module",
+                    "moduleType": "javascript/auto",
+                    "layer": null,
+                    "size": 176,
+                    "sizes": {
+                        "javascript": 176
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "name": "./src/pages/imgModule/index.jsx",
+                    "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "index": 4,
+                    "preOrderIndex": 4,
+                    "index2": 4,
+                    "postOrderIndex": 4,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": true,
+                    "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "issuerName": "./src/test.js",
+                    "issuerPath": [
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "name": "./src/test.js",
+                            "profile": {
+                                "total": 273,
+                                "resolving": 28,
+                                "restoring": 0,
+                                "building": 245,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 28,
+                                "dependencies": 0
+                            },
+                            "id": "./src/test.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 15,
+                        "resolving": 12,
+                        "restoring": 0,
+                        "building": 3,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 12,
+                        "dependencies": 0
+                    },
+                    "id": "./src/pages/imgModule/index.jsx",
+                    "issuerId": "./src/test.js",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony side effect evaluation",
+                            "active": false,
+                            "explanation": "",
+                            "userRequest": "@/pages/imgModule",
+                            "loc": "3:0-42",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        },
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony import specifier",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "@/pages/imgModule",
+                            "loc": "4:85-94",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": [
+                        "default"
+                    ],
+                    "optimizationBailout": [],
+                    "depth": 1
+                },
+                {
+                    "type": "module",
+                    "moduleType": "javascript/auto",
+                    "layer": null,
+                    "size": 220,
+                    "sizes": {
+                        "javascript": 220
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "index": 0,
+                    "preOrderIndex": 0,
+                    "index2": 5,
+                    "postOrderIndex": 5,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "issuer": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js",
+                    "issuerId": null,
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "resolvedModuleIdentifier": null,
+                            "resolvedModule": null,
+                            "type": "entry",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "./src/test.js",
+                            "loc": "index",
+                            "moduleId": null,
+                            "resolvedModuleId": null
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "type": "module",
+                    "moduleType": "javascript/dynamic",
+                    "layer": null,
+                    "size": 42,
+                    "sizes": {
+                        "javascript": 42
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "external var \"React\"",
+                    "name": "external \"React\"",
+                    "nameForCondition": null,
+                    "index": 1,
+                    "preOrderIndex": 1,
+                    "index2": 0,
+                    "postOrderIndex": 0,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": true,
+                    "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "issuerName": "./src/test.js",
+                    "issuerPath": [
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "name": "./src/test.js",
+                            "profile": {
+                                "total": 273,
+                                "resolving": 28,
+                                "restoring": 0,
+                                "building": 245,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 28,
+                                "dependencies": 0
+                            },
+                            "id": "./src/test.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 0,
+                        "resolving": 0,
+                        "restoring": 0,
+                        "building": 0,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 0,
+                        "dependencies": 0
+                    },
+                    "id": "react",
+                    "issuerId": "./src/test.js",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony side effect evaluation",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "react",
+                            "loc": "1:0-26",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        },
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "module": "./src/test.js",
+                            "moduleName": "./src/test.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "resolvedModule": "./src/test.js",
+                            "type": "harmony import specifier",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "react",
+                            "loc": "4:65-84",
+                            "moduleId": "./src/test.js",
+                            "resolvedModuleId": "./src/test.js"
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 1
+                },
+                {
+                    "type": "module",
+                    "moduleType": "javascript/dynamic",
+                    "layer": null,
+                    "size": 42,
+                    "sizes": {
+                        "javascript": 42
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "external var \"ReactDOM\"",
+                    "name": "external \"ReactDOM\"",
+                    "nameForCondition": null,
+                    "index": 3,
+                    "preOrderIndex": 3,
+                    "index2": 1,
+                    "postOrderIndex": 1,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": true,
+                    "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "issuerName": "./node_modules/react-dom/client.js",
+                    "issuerPath": [
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                            "name": "./src/test.js",
+                            "profile": {
+                                "total": 273,
+                                "resolving": 28,
+                                "restoring": 0,
+                                "building": 245,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 28,
+                                "dependencies": 0
+                            },
+                            "id": "./src/test.js"
+                        },
+                        {
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                            "name": "./node_modules/react-dom/client.js",
+                            "profile": {
+                                "total": 10,
+                                "resolving": 4,
+                                "restoring": 0,
+                                "building": 6,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 4,
+                                "dependencies": 0
+                            },
+                            "id": "./node_modules/react-dom/client.js"
+                        }
+                    ],
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 0,
+                        "resolving": 0,
+                        "restoring": 0,
+                        "building": 0,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 0,
+                        "dependencies": 0
+                    },
+                    "id": "react-dom",
+                    "issuerId": "./node_modules/react-dom/client.js",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                            "module": "./node_modules/react-dom/client.js",
+                            "moduleName": "./node_modules/react-dom/client.js",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                            "resolvedModule": "./node_modules/react-dom/client.js",
+                            "type": "cjs require",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "react-dom",
+                            "loc": "3:8-28",
+                            "moduleId": "./node_modules/react-dom/client.js",
+                            "resolvedModuleId": "./node_modules/react-dom/client.js"
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": null,
+                    "optimizationBailout": [],
+                    "depth": 2
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 302,
+                    "sizes": {
+                        "runtime": 302
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/compat get default export",
+                    "name": "webpack/runtime/compat get default export",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 313,
+                    "sizes": {
+                        "runtime": 313
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/define property getters",
+                    "name": "webpack/runtime/define property getters",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 221,
+                    "sizes": {
+                        "runtime": 221
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/global",
+                    "name": "webpack/runtime/global",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 103,
+                    "sizes": {
+                        "runtime": 103
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/hasOwnProperty shorthand",
+                    "name": "webpack/runtime/hasOwnProperty shorthand",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 279,
+                    "sizes": {
+                        "runtime": 279
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/make namespace object",
+                    "name": "webpack/runtime/make namespace object",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 875,
+                    "sizes": {
+                        "runtime": 875
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/publicPath",
+                    "name": "webpack/runtime/publicPath",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "dependent": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "index"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                }
+            ],
+            "origins": [
+                {
+                    "module": "",
+                    "moduleIdentifier": "",
+                    "moduleName": "",
+                    "loc": "index",
+                    "request": "./src/test.js"
+                }
+            ]
+        }
+    ],
+    "modules": [
+        {
+            "type": "module",
+            "moduleType": "javascript/auto",
+            "layer": null,
+            "size": 220,
+            "sizes": {
+                "javascript": 220
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+            "name": "./src/test.js",
+            "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/test.js",
+            "index": 0,
+            "preOrderIndex": 0,
+            "index2": 5,
+            "postOrderIndex": 5,
+            "cacheable": true,
+            "optional": false,
+            "orphan": false,
+            "issuer": null,
+            "issuerName": null,
+            "issuerPath": null,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 273,
+                "resolving": 28,
+                "restoring": 0,
+                "building": 245,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 28,
+                "dependencies": 0
+            },
+            "id": "./src/test.js",
+            "issuerId": null,
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": null,
+                    "module": null,
+                    "moduleName": null,
+                    "resolvedModuleIdentifier": null,
+                    "resolvedModule": null,
+                    "type": "entry",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "./src/test.js",
+                    "loc": "index",
+                    "moduleId": null,
+                    "resolvedModuleId": null
+                }
+            ],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": 0
+        },
+        {
+            "type": "module",
+            "moduleType": "javascript/dynamic",
+            "layer": null,
+            "size": 42,
+            "sizes": {
+                "javascript": 42
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "external var \"React\"",
+            "name": "external \"React\"",
+            "nameForCondition": null,
+            "index": 1,
+            "preOrderIndex": 1,
+            "index2": 0,
+            "postOrderIndex": 0,
+            "optional": false,
+            "orphan": false,
+            "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+            "issuerName": "./src/test.js",
+            "issuerPath": [
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+            },
+            "id": "react",
+            "issuerId": "./src/test.js",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony side effect evaluation",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "react",
+                    "loc": "1:0-26",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                },
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony import specifier",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "react",
+                    "loc": "4:65-84",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                }
+            ],
+            "usedExports": null,
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 1
+        },
+        {
+            "type": "module",
+            "moduleType": "javascript/auto",
+            "layer": null,
+            "size": 619,
+            "sizes": {
+                "javascript": 619
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+            "name": "./node_modules/react-dom/client.js",
+            "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+            "index": 2,
+            "preOrderIndex": 2,
+            "index2": 2,
+            "postOrderIndex": 2,
+            "cacheable": true,
+            "optional": false,
+            "orphan": false,
+            "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+            "issuerName": "./src/test.js",
+            "issuerPath": [
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 10,
+                "resolving": 4,
+                "restoring": 0,
+                "building": 6,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 4,
+                "dependencies": 0
+            },
+            "id": "./node_modules/react-dom/client.js",
+            "issuerId": "./src/test.js",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony side effect evaluation",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "react-dom/client",
+                    "loc": "2:0-46",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                },
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony import specifier",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "react-dom/client",
+                    "loc": "4:0-10",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                }
+            ],
+            "usedExports": null,
+            "providedExports": [
+                "createRoot",
+                "hydrateRoot"
+            ],
+            "optimizationBailout": [],
+            "depth": 1
+        },
+        {
+            "type": "module",
+            "moduleType": "javascript/auto",
+            "layer": null,
+            "size": 176,
+            "sizes": {
+                "javascript": 176
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+            "name": "./src/pages/imgModule/index.jsx",
+            "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+            "index": 4,
+            "preOrderIndex": 4,
+            "index2": 4,
+            "postOrderIndex": 4,
+            "cacheable": true,
+            "optional": false,
+            "orphan": false,
+            "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+            "issuerName": "./src/test.js",
+            "issuerPath": [
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 15,
+                "resolving": 12,
+                "restoring": 0,
+                "building": 3,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 12,
+                "dependencies": 0
+            },
+            "id": "./src/pages/imgModule/index.jsx",
+            "issuerId": "./src/test.js",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony side effect evaluation",
+                    "active": false,
+                    "explanation": "",
+                    "userRequest": "@/pages/imgModule",
+                    "loc": "3:0-42",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                },
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "module": "./src/test.js",
+                    "moduleName": "./src/test.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "resolvedModule": "./src/test.js",
+                    "type": "harmony import specifier",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "@/pages/imgModule",
+                    "loc": "4:85-94",
+                    "moduleId": "./src/test.js",
+                    "resolvedModuleId": "./src/test.js"
+                }
+            ],
+            "usedExports": null,
+            "providedExports": [
+                "default"
+            ],
+            "optimizationBailout": [],
+            "depth": 1
+        },
+        {
+            "type": "module",
+            "moduleType": "javascript/dynamic",
+            "layer": null,
+            "size": 42,
+            "sizes": {
+                "javascript": 42
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "external var \"ReactDOM\"",
+            "name": "external \"ReactDOM\"",
+            "nameForCondition": null,
+            "index": 3,
+            "preOrderIndex": 3,
+            "index2": 1,
+            "postOrderIndex": 1,
+            "optional": false,
+            "orphan": false,
+            "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+            "issuerName": "./node_modules/react-dom/client.js",
+            "issuerPath": [
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js"
+                },
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "name": "./node_modules/react-dom/client.js",
+                    "profile": {
+                        "total": 10,
+                        "resolving": 4,
+                        "restoring": 0,
+                        "building": 6,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 4,
+                        "dependencies": 0
+                    },
+                    "id": "./node_modules/react-dom/client.js"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+            },
+            "id": "react-dom",
+            "issuerId": "./node_modules/react-dom/client.js",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "module": "./node_modules/react-dom/client.js",
+                    "moduleName": "./node_modules/react-dom/client.js",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/react-dom/client.js",
+                    "resolvedModule": "./node_modules/react-dom/client.js",
+                    "type": "cjs require",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "react-dom",
+                    "loc": "3:8-28",
+                    "moduleId": "./node_modules/react-dom/client.js",
+                    "resolvedModuleId": "./node_modules/react-dom/client.js"
+                }
+            ],
+            "usedExports": null,
+            "providedExports": null,
+            "optimizationBailout": [],
+            "depth": 2
+        },
+        {
+            "type": "module",
+            "moduleType": "asset",
+            "layer": null,
+            "size": 42,
+            "sizes": {
+                "javascript": 42,
+                "asset": 101458
+            },
+            "built": true,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "asset|/Users/larvide/dailyCoding/webpack@5/src/img/jsobj.jpg",
+            "name": "./src/img/jsobj.jpg",
+            "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/src/img/jsobj.jpg",
+            "index": 5,
+            "preOrderIndex": 5,
+            "index2": 3,
+            "postOrderIndex": 3,
+            "cacheable": true,
+            "optional": false,
+            "orphan": false,
+            "issuer": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+            "issuerName": "./src/pages/imgModule/index.jsx",
+            "issuerPath": [
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/test.js",
+                    "name": "./src/test.js",
+                    "profile": {
+                        "total": 273,
+                        "resolving": 28,
+                        "restoring": 0,
+                        "building": 245,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 28,
+                        "dependencies": 0
+                    },
+                    "id": "./src/test.js"
+                },
+                {
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "name": "./src/pages/imgModule/index.jsx",
+                    "profile": {
+                        "total": 15,
+                        "resolving": 12,
+                        "restoring": 0,
+                        "building": 3,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 12,
+                        "dependencies": 0
+                    },
+                    "id": "./src/pages/imgModule/index.jsx"
+                }
+            ],
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "profile": {
+                "total": 3,
+                "resolving": 2,
+                "restoring": 0,
+                "building": 1,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 2,
+                "dependencies": 0
+            },
+            "id": "./src/img/jsobj.jpg",
+            "issuerId": "./src/pages/imgModule/index.jsx",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "module": "./src/pages/imgModule/index.jsx",
+                    "moduleName": "./src/pages/imgModule/index.jsx",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "resolvedModule": "./src/pages/imgModule/index.jsx",
+                    "type": "harmony side effect evaluation",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "img/jsobj.jpg",
+                    "loc": "1:0-34",
+                    "moduleId": "./src/pages/imgModule/index.jsx",
+                    "resolvedModuleId": "./src/pages/imgModule/index.jsx"
+                },
+                {
+                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "module": "./src/pages/imgModule/index.jsx",
+                    "moduleName": "./src/pages/imgModule/index.jsx",
+                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[2].use!/Users/larvide/dailyCoding/webpack@5/src/pages/imgModule/index.jsx",
+                    "resolvedModule": "./src/pages/imgModule/index.jsx",
+                    "type": "harmony import specifier",
+                    "active": true,
+                    "explanation": "",
+                    "userRequest": "img/jsobj.jpg",
+                    "loc": "5:9-14",
+                    "moduleId": "./src/pages/imgModule/index.jsx",
+                    "resolvedModuleId": "./src/pages/imgModule/index.jsx"
+                }
+            ],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": 2
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 302,
+            "sizes": {
+                "runtime": 302
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/compat get default export",
+            "name": "webpack/runtime/compat get default export",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 313,
+            "sizes": {
+                "runtime": 313
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/define property getters",
+            "name": "webpack/runtime/define property getters",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 221,
+            "sizes": {
+                "runtime": 221
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/global",
+            "name": "webpack/runtime/global",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 103,
+            "sizes": {
+                "runtime": 103
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/hasOwnProperty shorthand",
+            "name": "webpack/runtime/hasOwnProperty shorthand",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 279,
+            "sizes": {
+                "runtime": 279
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/make namespace object",
+            "name": "webpack/runtime/make namespace object",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        },
+        {
+            "type": "module",
+            "moduleType": "runtime",
+            "layer": null,
+            "size": 875,
+            "sizes": {
+                "runtime": 875
+            },
+            "built": false,
+            "codeGenerated": true,
+            "buildTimeExecuted": false,
+            "cached": false,
+            "identifier": "webpack/runtime/publicPath",
+            "name": "webpack/runtime/publicPath",
+            "nameForCondition": null,
+            "index": null,
+            "preOrderIndex": null,
+            "index2": null,
+            "postOrderIndex": null,
+            "optional": false,
+            "orphan": false,
+            "failed": false,
+            "errors": 0,
+            "warnings": 0,
+            "id": "",
+            "chunks": [
+                "index"
+            ],
+            "assets": [],
+            "reasons": [],
+            "usedExports": null,
+            "providedExports": [],
+            "optimizationBailout": [],
+            "depth": null
+        }
+    ],
+    "entrypoints": {
+        "index": {
+            "name": "index",
+            "chunks": [
+                "index"
+            ],
+            "assets": [
+                {
+                    "name": "js/index.0a020104.bundle.js",
+                    "size": 6554
+                }
+            ],
+            "filteredAssets": 0,
+            "assetsSize": 6554,
+            "auxiliaryAssets": [
+                {
+                    "name": "img/jsobj.fa9295e7.jpg",
+                    "size": 101458
+                }
+            ],
+            "filteredAuxiliaryAssets": 0,
+            "auxiliaryAssetsSize": 101458,
+            "children": {},
+            "childAssets": {},
+            "isOverSizeLimit": false
+        }
+    },
+    "namedChunkGroups": {
+        "index": {
+            "name": "index",
+            "chunks": [
+                "index"
+            ],
+            "assets": [
+                {
+                    "name": "js/index.0a020104.bundle.js",
+                    "size": 6554
+                }
+            ],
+            "filteredAssets": 0,
+            "assetsSize": 6554,
+            "auxiliaryAssets": [
+                {
+                    "name": "img/jsobj.fa9295e7.jpg",
+                    "size": 101458
+                }
+            ],
+            "filteredAuxiliaryAssets": 0,
+            "auxiliaryAssetsSize": 101458,
+            "children": {},
+            "childAssets": {},
+            "isOverSizeLimit": false
+        }
+    },
+    "errors": [],
+    "errorsCount": 0,
+    "warnings": [],
+    "warningsCount": 0,
+    "children": [
+        {
+            "name": "HtmlWebpackCompiler",
+            "hash": "fbf94d7a3d8affdfb7a7",
+            "version": "5.73.0",
+            "time": 121,
+            "builtAt": 1662997628765,
+            "publicPath": "",
+            "outputPath": "/Users/larvide/dailyCoding/webpack@5/dist",
+            "assetsByChunkName": {},
+            "assets": [],
+            "chunks": [
+                {
+                    "rendered": true,
+                    "initial": true,
+                    "entry": true,
+                    "recorded": false,
+                    "size": 1876,
+                    "sizes": {
+                        "javascript": 1122,
+                        "runtime": 754
+                    },
+                    "names": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "idHints": [],
+                    "runtime": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "files": [],
+                    "auxiliaryFiles": [],
+                    "hash": "c796dd7b5514ecc6fa8b",
+                    "childrenByOrder": {},
+                    "id": "HtmlWebpackPlugin_0-0",
+                    "siblings": [],
+                    "parents": [],
+                    "children": [],
+                    "modules": [
+                        {
+                            "type": "module",
+                            "moduleType": "javascript/auto",
+                            "layer": null,
+                            "size": 1045,
+                            "sizes": {
+                                "javascript": 1045
+                            },
+                            "built": true,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                            "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                            "index": 1,
+                            "preOrderIndex": 1,
+                            "index2": 1,
+                            "postOrderIndex": 1,
+                            "cacheable": true,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "issuer": null,
+                            "issuerName": null,
+                            "issuerPath": null,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "profile": {
+                                "total": 0,
+                                "resolving": 0,
+                                "restoring": 0,
+                                "building": 0,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 0,
+                                "dependencies": 0
+                            },
+                            "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "issuerId": null,
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [
+                                {
+                                    "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                                    "module": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                                    "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                                    "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                                    "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                                    "type": "cjs self exports reference",
+                                    "active": true,
+                                    "explanation": "",
+                                    "userRequest": null,
+                                    "loc": "1:102-116",
+                                    "moduleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                                    "resolvedModuleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html"
+                                },
+                                {
+                                    "moduleIdentifier": null,
+                                    "module": null,
+                                    "moduleName": null,
+                                    "resolvedModuleIdentifier": null,
+                                    "resolvedModule": null,
+                                    "type": "entry",
+                                    "active": true,
+                                    "explanation": "",
+                                    "userRequest": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                                    "loc": "HtmlWebpackPlugin_0-0",
+                                    "moduleId": null,
+                                    "resolvedModuleId": null
+                                },
+                                {
+                                    "moduleIdentifier": null,
+                                    "module": null,
+                                    "moduleName": null,
+                                    "resolvedModuleIdentifier": null,
+                                    "resolvedModule": null,
+                                    "type": null,
+                                    "active": true,
+                                    "explanation": "used as library export",
+                                    "userRequest": null,
+                                    "moduleId": null,
+                                    "resolvedModuleId": null
+                                }
+                            ],
+                            "usedExports": null,
+                            "providedExports": null,
+                            "optimizationBailout": [
+                                "CommonJS bailout: module.exports is used directly at 1:102-116"
+                            ],
+                            "depth": 0
+                        },
+                        {
+                            "type": "module",
+                            "moduleType": "javascript/esm",
+                            "layer": null,
+                            "size": 77,
+                            "sizes": {
+                                "javascript": 77
+                            },
+                            "built": true,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                            "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                            "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                            "index": 0,
+                            "preOrderIndex": 0,
+                            "index2": 0,
+                            "postOrderIndex": 0,
+                            "cacheable": true,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "issuer": null,
+                            "issuerName": null,
+                            "issuerPath": null,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "profile": {
+                                "total": 10,
+                                "resolving": 4,
+                                "restoring": 0,
+                                "building": 6,
+                                "integration": 0,
+                                "storing": 0,
+                                "additionalResolving": 0,
+                                "additionalIntegration": 0,
+                                "factory": 4,
+                                "dependencies": 0
+                            },
+                            "id": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                            "issuerId": null,
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [
+                                {
+                                    "moduleIdentifier": null,
+                                    "module": null,
+                                    "moduleName": null,
+                                    "resolvedModuleIdentifier": null,
+                                    "resolvedModule": null,
+                                    "type": "entry",
+                                    "active": true,
+                                    "explanation": "",
+                                    "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                                    "loc": "HtmlWebpackPlugin_0-0",
+                                    "moduleId": null,
+                                    "resolvedModuleId": null
+                                }
+                            ],
+                            "usedExports": null,
+                            "providedExports": [],
+                            "optimizationBailout": [],
+                            "depth": 0
+                        },
+                        {
+                            "type": "module",
+                            "moduleType": "runtime",
+                            "layer": null,
+                            "size": 103,
+                            "sizes": {
+                                "runtime": 103
+                            },
+                            "built": false,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "webpack/runtime/hasOwnProperty shorthand",
+                            "name": "webpack/runtime/hasOwnProperty shorthand",
+                            "nameForCondition": null,
+                            "index": null,
+                            "preOrderIndex": null,
+                            "index2": null,
+                            "postOrderIndex": null,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "id": "",
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [],
+                            "usedExports": null,
+                            "providedExports": [],
+                            "optimizationBailout": [],
+                            "depth": null
+                        },
+                        {
+                            "type": "module",
+                            "moduleType": "runtime",
+                            "layer": null,
+                            "size": 279,
+                            "sizes": {
+                                "runtime": 279
+                            },
+                            "built": false,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "webpack/runtime/make namespace object",
+                            "name": "webpack/runtime/make namespace object",
+                            "nameForCondition": null,
+                            "index": null,
+                            "preOrderIndex": null,
+                            "index2": null,
+                            "postOrderIndex": null,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "id": "",
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [],
+                            "usedExports": null,
+                            "providedExports": [],
+                            "optimizationBailout": [],
+                            "depth": null
+                        },
+                        {
+                            "type": "module",
+                            "moduleType": "runtime",
+                            "layer": null,
+                            "size": 27,
+                            "sizes": {
+                                "runtime": 27
+                            },
+                            "built": false,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "webpack/runtime/publicPath",
+                            "name": "webpack/runtime/publicPath",
+                            "nameForCondition": null,
+                            "index": null,
+                            "preOrderIndex": null,
+                            "index2": null,
+                            "postOrderIndex": null,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "id": "",
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [],
+                            "usedExports": null,
+                            "providedExports": [],
+                            "optimizationBailout": [],
+                            "depth": null
+                        },
+                        {
+                            "type": "module",
+                            "moduleType": "runtime",
+                            "layer": null,
+                            "size": 345,
+                            "sizes": {
+                                "runtime": 345
+                            },
+                            "built": false,
+                            "codeGenerated": true,
+                            "buildTimeExecuted": false,
+                            "cached": false,
+                            "identifier": "webpack/runtime/require chunk loading",
+                            "name": "webpack/runtime/require chunk loading",
+                            "nameForCondition": null,
+                            "index": null,
+                            "preOrderIndex": null,
+                            "index2": null,
+                            "postOrderIndex": null,
+                            "optional": false,
+                            "orphan": false,
+                            "dependent": false,
+                            "failed": false,
+                            "errors": 0,
+                            "warnings": 0,
+                            "id": "",
+                            "chunks": [
+                                "HtmlWebpackPlugin_0-0"
+                            ],
+                            "assets": [],
+                            "reasons": [],
+                            "usedExports": null,
+                            "providedExports": [],
+                            "optimizationBailout": [],
+                            "depth": null
+                        }
+                    ],
+                    "origins": [
+                        {
+                            "module": "",
+                            "moduleIdentifier": "",
+                            "moduleName": "",
+                            "loc": "HtmlWebpackPlugin_0-0",
+                            "request": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html"
+                        },
+                        {
+                            "module": "",
+                            "moduleIdentifier": "",
+                            "moduleName": "",
+                            "loc": "HtmlWebpackPlugin_0-0",
+                            "request": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;"
+                        }
+                    ]
+                }
+            ],
+            "modules": [
+                {
+                    "type": "module",
+                    "moduleType": "javascript/esm",
+                    "layer": null,
+                    "size": 77,
+                    "sizes": {
+                        "javascript": 77
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "javascript/esm|data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                    "name": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                    "nameForCondition": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                    "index": 0,
+                    "preOrderIndex": 0,
+                    "index2": 0,
+                    "postOrderIndex": 0,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "issuer": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 10,
+                        "resolving": 4,
+                        "restoring": 0,
+                        "building": 6,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 4,
+                        "dependencies": 0
+                    },
+                    "id": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                    "issuerId": null,
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "resolvedModuleIdentifier": null,
+                            "resolvedModule": null,
+                            "type": "entry",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "data:text/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;",
+                            "loc": "HtmlWebpackPlugin_0-0",
+                            "moduleId": null,
+                            "resolvedModuleId": null
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": 0
+                },
+                {
+                    "type": "module",
+                    "moduleType": "javascript/auto",
+                    "layer": null,
+                    "size": 1045,
+                    "sizes": {
+                        "javascript": 1045
+                    },
+                    "built": true,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                    "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                    "nameForCondition": "/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                    "index": 1,
+                    "preOrderIndex": 1,
+                    "index2": 1,
+                    "postOrderIndex": 1,
+                    "cacheable": true,
+                    "optional": false,
+                    "orphan": false,
+                    "issuer": null,
+                    "issuerName": null,
+                    "issuerPath": null,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "profile": {
+                        "total": 0,
+                        "resolving": 0,
+                        "restoring": 0,
+                        "building": 0,
+                        "integration": 0,
+                        "storing": 0,
+                        "additionalResolving": 0,
+                        "additionalIntegration": 0,
+                        "factory": 0,
+                        "dependencies": 0
+                    },
+                    "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                    "issuerId": null,
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [
+                        {
+                            "moduleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                            "module": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "resolvedModuleIdentifier": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                            "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "type": "cjs self exports reference",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": null,
+                            "loc": "1:102-116",
+                            "moduleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+                            "resolvedModuleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html"
+                        },
+                        {
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "resolvedModuleIdentifier": null,
+                            "resolvedModule": null,
+                            "type": "entry",
+                            "active": true,
+                            "explanation": "",
+                            "userRequest": "/Users/larvide/dailyCoding/webpack@5/node_modules/html-webpack-plugin/lib/loader.js!/Users/larvide/dailyCoding/webpack@5/public/index.html",
+                            "loc": "HtmlWebpackPlugin_0-0",
+                            "moduleId": null,
+                            "resolvedModuleId": null
+                        },
+                        {
+                            "moduleIdentifier": null,
+                            "module": null,
+                            "moduleName": null,
+                            "resolvedModuleIdentifier": null,
+                            "resolvedModule": null,
+                            "type": null,
+                            "active": true,
+                            "explanation": "used as library export",
+                            "userRequest": null,
+                            "moduleId": null,
+                            "resolvedModuleId": null
+                        }
+                    ],
+                    "usedExports": null,
+                    "providedExports": null,
+                    "optimizationBailout": [
+                        "CommonJS bailout: module.exports is used directly at 1:102-116"
+                    ],
+                    "depth": 0
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 103,
+                    "sizes": {
+                        "runtime": 103
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/hasOwnProperty shorthand",
+                    "name": "webpack/runtime/hasOwnProperty shorthand",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 279,
+                    "sizes": {
+                        "runtime": 279
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/make namespace object",
+                    "name": "webpack/runtime/make namespace object",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 27,
+                    "sizes": {
+                        "runtime": 27
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/publicPath",
+                    "name": "webpack/runtime/publicPath",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                },
+                {
+                    "type": "module",
+                    "moduleType": "runtime",
+                    "layer": null,
+                    "size": 345,
+                    "sizes": {
+                        "runtime": 345
+                    },
+                    "built": false,
+                    "codeGenerated": true,
+                    "buildTimeExecuted": false,
+                    "cached": false,
+                    "identifier": "webpack/runtime/require chunk loading",
+                    "name": "webpack/runtime/require chunk loading",
+                    "nameForCondition": null,
+                    "index": null,
+                    "preOrderIndex": null,
+                    "index2": null,
+                    "postOrderIndex": null,
+                    "optional": false,
+                    "orphan": false,
+                    "failed": false,
+                    "errors": 0,
+                    "warnings": 0,
+                    "id": "",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "reasons": [],
+                    "usedExports": null,
+                    "providedExports": [],
+                    "optimizationBailout": [],
+                    "depth": null
+                }
+            ],
+            "entrypoints": {
+                "HtmlWebpackPlugin_0-0": {
+                    "name": "HtmlWebpackPlugin_0-0",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "filteredAssets": 0,
+                    "assetsSize": 0,
+                    "auxiliaryAssets": [],
+                    "filteredAuxiliaryAssets": 0,
+                    "auxiliaryAssetsSize": 0,
+                    "children": {},
+                    "childAssets": {},
+                    "isOverSizeLimit": false
+                }
+            },
+            "namedChunkGroups": {
+                "HtmlWebpackPlugin_0-0": {
+                    "name": "HtmlWebpackPlugin_0-0",
+                    "chunks": [
+                        "HtmlWebpackPlugin_0-0"
+                    ],
+                    "assets": [],
+                    "filteredAssets": 0,
+                    "assetsSize": 0,
+                    "auxiliaryAssets": [],
+                    "filteredAuxiliaryAssets": 0,
+                    "auxiliaryAssetsSize": 0,
+                    "children": {},
+                    "childAssets": {},
+                    "isOverSizeLimit": false
+                }
+            },
+            "errors": [],
+            "errorsCount": 0,
+            "warnings": [],
+            "warningsCount": 0,
+            "children": []
+        }
+    ]
+}
