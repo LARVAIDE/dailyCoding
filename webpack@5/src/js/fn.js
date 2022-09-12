@@ -4,5 +4,5 @@
 
 // alert('ssss')
 
-const str = "${name} ss  "; // eslint-disable-line no-template-curly-in-string
+const str = '${name} ss  '; // eslint-disable-line no-template-curly-in-string
 console.log(str);

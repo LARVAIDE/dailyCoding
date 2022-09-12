@@ -1,1 +1,1 @@
-module.exports = "懒加载分析";
+module.exports = '懒加载分析';

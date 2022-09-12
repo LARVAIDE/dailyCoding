@@ -1,21 +1,29 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true
   },
-  /**
-   * 继承一些共享配置
-   */
-  extends: ["standard", "eslint:recommended", "plugin:react/recommended"],
-  overrides: [],
-  /**
-   * parserOptions 里面的配置仅提供语法检测，具体可使用哪些成员要是依赖于`env`
-   */
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'standard',
+    'plugin:react/jsx-runtime'
+  ],
+  overrides: [
+  ],
   parserOptions: {
-    ecmaVersion: "latest",
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
   },
+  plugins: [
+    'react'
+  ],
   rules: {
-    semi: 0, // 结尾分号
-  },
-  plugins: ["react"],
-};
+    semi: 0,
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    'react/react-in-jsx-scope': 0,
+    "no-unused-vars": 'off'
+  }
+}

@@ -1,42 +1,42 @@
 module.exports = {
-  mode: "development",
-  devtool: "cheap-module-source-map",
-  target: "web",
+  mode: 'development',
+  devtool: 'cheap-module-source-map',
+  target: 'web',
   devServer: {
     hot: true,
     port: 8088,
     historyApiFallback: true,
     proxy: {
-      "/api": {
-        target: "https://example.com",
+      '/api': {
+        target: 'https://example.com',
         pathRewrite: {
-          "^/api": "",
+          '^/api': ''
         },
-        changeOrigin: true,
-      },
-    },
+        changeOrigin: true
+      }
+    }
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               esModule: false,
-              importLoaders: 1,
-            },
+              importLoaders: 1
+            }
           },
-          "postcss-loader",
+          'postcss-loader'
         ],
-        sideEffects: true,
+        sideEffects: true
       },
       {
         test: /\.less$/,
-        use: ["style-loader", "css-loader", "postcss-loader", "less-loader"],
-      },
-    ],
-  },
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+      }
+    ]
+  }
 };
