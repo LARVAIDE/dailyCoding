@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height: 800px;
+            overflow: scroll;
+        }
+        #root{
+            height: 20px;
+            background-color: aquamarine;
+            margin: 1200px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <img id="root" src="" alt="" srcset="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png">
+    </div>
+
+    <script>
+        let _ = document.getElementById("root")
+        let intersectionObserver = new IntersectionObserver((entries) => {
+            // 定义DOM元素的可视状态发生变化后需要做些什么
+            if (entries[0].intersectionRatio > 0) {
+                // intersectionRatio大于0，代表监听的元素由不可见变成可见
+                console.log('可见')
+            } else {
+                // 反之则代表监听的元素由可见变成不可见
+                console.log('不可见')
+            }
+        }, {
+
+        });
+
+
+        intersectionObserver.observe(_)
+    </script>
+</body>
+
+</html>
