@@ -1,5 +1,5 @@
 # 项目描述
-git repository：https://e.coding.net/larvide/test/dailyCoding.git
+git repository：https://gitee.com/larvide/dailyCoding.git
 - 用来记录新技术学习
 - 源码阅读
 - markdown参考
