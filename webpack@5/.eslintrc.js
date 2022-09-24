@@ -24,6 +24,6 @@ module.exports = {
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
     'react/react-in-jsx-scope': 0,
-    "no-unused-vars": 'off'
+    'no-unused-vars': 0
   }
 }

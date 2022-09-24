@@ -1,12 +1,4 @@
 class MyEventEmitter { 
-    static instance = null;
-    static getInstance() {
-        if (!MyEventEmitter.instance) {
-            MyEventEmitter.instance = new MyEventEmitter()
-        }
-        return MyEventEmitter.instance
-    }
-
     constructor() { 
         this.events = {}
     }
@@ -22,7 +14,7 @@ class MyEventEmitter {
     }
 
     /**
-     * 执行
+     * 响应
      * @param {*} name 
      */
     emit(name, ...args) { 
@@ -40,16 +32,19 @@ class MyEventEmitter {
             this.events[name] = this.events[name].filter(item => item !== event)
         }
     }
-
-    /** */
-    once(name, ) { 
-
-    }
 }
 
 class EventEmitter { 
     constructor() { 
-        return MyEventEmitter.getInstance()
+        return EventEmitter.getInstance()
+    }
+
+    static instance = null;
+    static getInstance() {
+        if (!MyEventEmitter.instance) {
+            MyEventEmitter.instance = new MyEventEmitter()
+        }
+        return MyEventEmitter.instance
     }
 }
 
