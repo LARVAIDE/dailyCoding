@@ -4,8 +4,6 @@
  * 复杂情况下还是需要传递参数
  * */
 
-import { type } from "os";
-
 export {}
 
 const {log} = console

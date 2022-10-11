@@ -8,3 +8,5 @@ function getValue(obj, keys) {
 log(getValue(obj, 'a.b.c'))
 
 
+
+
