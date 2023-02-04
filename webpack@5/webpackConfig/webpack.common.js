@@ -11,13 +11,13 @@ const testConfig = require('./webpack.test');
 
 const commonConfig = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
     // shared: ['react', 'react-dom'], //多入口三方库分离
   },
   output: {
     filename: 'js/[name].[contenthash:8].bundle.js',
     path: resolveApp('./dist'),
-    chunkFilename: 'js/[name].[contenthash:8].bundle.js'
+    chunkFilename: 'js/[name].[contenthash:8].bundle.js',
     // publicPath: 'https://cdn.example.com/assets/[fullhash]'
     // assetModuleFilename: 'img/[name].[hash:6][ext]'
   },
@@ -29,8 +29,8 @@ const commonConfig = {
       '@': resolveApp('src'),
       components: resolveApp('src/components'),
       pages: resolveApp('src/pages'),
-      img: resolveApp('src/img')
-    }
+      img: resolveApp('src/img'),
+    },
   },
   /**
    *  asset/resource 将资源分割为单独的文件，并导出 url，类似之前的 file-loader 的功能.
@@ -44,20 +44,20 @@ const commonConfig = {
         test: /\.(jpe?g|svg|png|gif|webp)$/i,
         type: 'asset',
         generator: {
-          filename: 'img/[name].[contenthash:8][ext]'
+          filename: 'img/[name].[contenthash:8][ext]',
         },
         parser: {
           dataUrlCondition: {
-            maxSize: 8 * 1024 // 超过100kb不转 base64
-          }
-        }
+            maxSize: 8 * 1024, // 超过100kb不转 base64
+          },
+        },
       },
       {
         test: /\.ttf$/,
         type: 'asset/resource',
         generator: {
-          filename: 'font/[name].[ext]'
-        }
+          filename: 'font/[name].[ext]',
+        },
       },
       {
         test: /\.jsx?$/,
@@ -65,30 +65,30 @@ const commonConfig = {
         use: {
           loader: 'babel-loader',
           options: {
-            cacheDirectory: true
-          }
-        }
+            cacheDirectory: true,
+          },
+        },
       },
       {
         test: /.md$/,
         exclude: /node_modules/,
-        use: ['./markdown-loader']
-      }
-    ]
+        use: ['./markdown-loader'],
+      },
+    ],
   },
   plugins: [
     new DefinePlugin({
-      BASE_URL: '"./"'
+      BASE_URL: '"./"',
     }),
     new HtmlWebpackPlugin({
       title: 'study webpack',
-      template: './public/index.html'
+      template: './public/index.html',
     }),
     new ESLintPlugin({
       context: resolveApp('src'),
       cache: true, // 开启缓存
-      cacheLocation: resolveApp('node_modules/.cache/.eslintcache')       // 缓存目录
-    })
+      cacheLocation: resolveApp('node_modules/.cache/.eslintcache'), // 缓存目录
+    }),
     // new webpack.DllReferencePlugin({
     //     context: resolveApp('./'),
     //     manifest: resolveApp('./dll/mainfest.json')
@@ -103,22 +103,25 @@ const commonConfig = {
    */
   externals: {
     react: 'React',
-    'react-dom': 'ReactDOM'
-  }
+    'react-dom': 'ReactDOM',
+  },
 };
 
 module.exports = (env) => {
   const TARGET = process.env.npm_lifecycle_event;
-  if (TARGET === 'start') {
-    process.env.NODE_ENV = 'development';
-    return merge(commonConfig, devConfig);
-  }
-  if (TARGET === 'build') {
-    process.env.NODE_ENV = 'production';
-    return merge(commonConfig, prodConfig);
-  }
-  if (TARGET === 'test') {
-    process.env.NODE_ENV = 'development';
-    return merge(commonConfig, testConfig);
-  }
+  const ENV_HANDLE = {
+    start: () => {
+      process.env.NODE_ENV = 'development';
+      return merge(commonConfig, devConfig);
+    },
+    test: () => {
+      process.env.NODE_ENV = 'development';
+      return merge(commonConfig, testConfig);
+    },
+    build: () => {
+      process.env.NODE_ENV = 'production';
+      return merge(commonConfig, prodConfig);
+    },
+  };
+  return ENV_HANDLE[TARGET]?.();
 };

@@ -1,4 +1,5 @@
 const path = require('path')
+const ChunkPlugin = require('./chunkPlugin');
 
 module.exports = {
     mode: 'development',
@@ -8,5 +9,8 @@ module.exports = {
     output: {
         filename: 'build.js',
         path: path.resolve(__dirname, './dist'),
-    }
+    },
+    plugins: [
+        new ChunkPlugin()
+    ]
 } 

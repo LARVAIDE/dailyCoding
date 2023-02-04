@@ -2,7 +2,8 @@
  * 调试webpack的入口文件
  * 直接node命令执行该文件
  */
-const webpack = require('./myPack')
+// const webpack = require('./myPack')
+const webpack = require('webpack')
 const options = require('./webpack.config.js')
 
 const complier = webpack(options)
