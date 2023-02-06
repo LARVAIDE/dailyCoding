@@ -1,5 +1,12 @@
 {
-  "dependencies": {
-    "http": "^0.0.1-security"
-  }
+  "name": "daily-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
