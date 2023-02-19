@@ -1,13 +1,5 @@
-// import { foo, log } from "./log";
-// import msg from "./msg";
-// import { name, version } from "../package.json";
-// import cjs from "./cjs";
+import { add } from './util';
+import { merge } from 'lodash';
 
-
-// log(name, version)
-
-// log(cjs)
-
-import('./log').then(({ log }) => {
-    log('ssss')
-})
+console.log(merge);
+console.log(add(1, 2));

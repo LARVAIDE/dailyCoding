@@ -1,22 +1,18 @@
-import json from "rollup-plugin-json";
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
-import babel from 'rollup-plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import { terser } from 'rollup-plugin-terser';
 
+/**
+ * @type { import('rollup').RollupOptions }
+ */
 export default {
-    input: 'src/index.js',
-    output: {
-        // file: 'dist/bundle.js',
-        // format: 'iife'
-        dir: 'dist',
-        format: 'amd'
+  input: ['src/index.js'],
+  output: [
+    {
+      dir: 'dist',
+      format: 'cjs',
+      plugins: [terser()],
     },
-    plugins: [
-        json(),
-        resolve(),
-        commonjs(),
-        babel({
-            exclude: 'node_modules/**' // 只编译我们的源代码
-        })
-    ]
+  ],
+  plugins: [resolve(), commonjs()],
 };
