@@ -1,15 +1,25 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "pwa-chrome",
-            "request": "launch",
-            "type": "pwa-chrome",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "react source code debug",
+      "webRoot": "${workspaceFolder}/packages/react-debug/debug",
+      "sourceMapPathOverrides": {
+        "meteor://💻app/*": "${workspaceFolder}/packages/react-debug/debug/*",
+        "webpack:///./~/*": "${workspaceFolder}/packages/react-debug/debug/node_modules/*",
+        "webpack://?:*/*": "${workspaceFolder}/packages/react-debug/debug/*"
+      },
+      "file": "${workspaceFolder}/packages/react-debug/debug/index.html"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "debuggerAll packages",
+      "configurations": ["react source code debug"],
+      "preLaunchTask": "${defaultBuildTask}",
+      "stopAll": true
+    }
+  ]
 }
