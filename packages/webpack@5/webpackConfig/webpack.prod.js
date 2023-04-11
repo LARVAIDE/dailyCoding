@@ -24,57 +24,53 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 1 // 向前找一个loader来处理文件，场景：使用@import()导入
-            }
+              importLoaders: 1, // 向前找一个loader来处理文件，场景：使用@import()导入
+            },
           },
-          'postcss-loader'
+          'postcss-loader',
         ],
-        sideEffects: true // 避免css被treeshaking
+        sideEffects: true, // 避免css被treeshaking
       },
       {
         test: /\.less$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
-          'less-loader'
-        ]
-      }
-    ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'less-loader'],
+      },
+    ],
   },
   optimization: {
     usedExports: true, // 标记未使用的代码，结合minimizer-->terserWebpackPlugin实现tree shaking
     minimize: true, // false不使用minimizer
     minimizer: [
       new terserWebpackPlugin({
-        extractComments: false
+        extractComments: false,
       }),
-      new CssMinimizerPlugin()
+      new CssMinimizerPlugin(),
     ],
     chunkIds: 'deterministic',
     runtimeChunk: true,
     splitChunks: {
       chunks: 'all',
-      minSize: 20000,
-      minChunks: 1,
+      minSize: 10000,
+      maxSize: 250000,
       cacheGroups: {
-        dlVendors: {
+        defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
-          filename: 'js/[id]_vendor.js',
-          priority: -10
+          priority: -10,
+          filename: 'vendors.js',
         },
         default: {
           minChunks: 2,
-          priority: -20
-        }
-      }
-    }
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
   },
   /**
    * 缓存生成的 webpack 模块和 chunk，来改善构建速度
    */
   cache: {
-    type: 'filesystem'
+    type: 'filesystem',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -83,28 +79,28 @@ module.exports = {
         {
           from: 'public',
           globOptions: {
-            ignore: ['**/index.html']
-          }
-        }
-      ]
+            ignore: ['**/index.html'],
+          },
+        },
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
-      chunkFilename: 'css/[name].[contenthash:8].css'
+      chunkFilename: 'css/[name].[contenthash:8].css',
     }),
     new ProgressBarPlugin({
-      format: `  :msg [:bar] ${chalk.green.bold(':percent')} (:elapsed s)`
+      format: `  :msg [:bar] ${chalk.green.bold(':percent')} (:elapsed s)`,
     }),
     new PurgeCSSPlugin({
-      paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true })
+      paths: glob.sync(`${resolveApp('./src')}/**/*`, { nodir: true }),
     }),
     new AssetsCdnPrefreshWebpackPlugin({
-      publicPath: 'https://cdn.91zhen.com'
-    })
+      publicPath: 'https://cdn.91zhen.com',
+    }),
     // new webpack.optimize.ModuleConcatenationPlugin(), //在使用 tree shaking 时必须有 ModuleConcatenationPlugin 的支持，production模式默认启用了，其他模式需要手动引入
     // new CompressionPlugin({
     //     test: /\.(css|js|ttf)$/,
     //     algorithm: 'gzip'
     // })
-  ]
+  ],
 };

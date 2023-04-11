@@ -3,6 +3,7 @@ const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+
 const resolveApp = require('./path');
 const { merge } = require('webpack-merge');
 const prodConfig = require('./webpack.prod');
