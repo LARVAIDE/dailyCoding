@@ -12,6 +12,11 @@
         "webpack://?:*/*": "${workspaceFolder}/packages/react-debug/debug/*"
       },
       "file": "${workspaceFolder}/packages/react-debug/debug/index.html"
+    }, 
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug mode with pupeeter",
     }
   ],
   "compounds": [

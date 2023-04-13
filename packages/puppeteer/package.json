@@ -5,18 +5,24 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "cross-env NODE_ENV=test nodemon ./src/index.ts"
+    "launch": "/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --remote-debugging-port=3002",
+    "test": "NODE_ENV=beta nodemon ./src/app.ts"
+  },
+  "nodemonConfig": {
+    "ignore": [],
+    "delay": 3000
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^19.8.5"
+    "puppeteer-core": "^19.8.5"
   },
   "devDependencies": {
+    "@types/ps-node": "^0.1.1",
     "@types/puppeteer": "^7.0.4",
-    "cross-env": "^7.0.3",
-    "esm": "^3.2.25",
-    "nodemon": "^2.0.4"
+    "child_process": "^1.0.2",
+    "nodemon": "^2.0.4",
+    "ps-node": "^0.1.6"
   }
 }
