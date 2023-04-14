@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer-core";
 
-import login from "@scripts/login";
-import upload from "@scripts/upload";
+import login from "./scripts/login";
+import upload from "./scripts/upload";
 
 (async () => {
   const browser = await puppeteer.connect({
