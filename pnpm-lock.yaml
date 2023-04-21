@@ -159,9 +159,11 @@ importers:
     specifiers:
       '@types/node': ^18.11.18
       '@types/puppeteer': ^7.0.4
+      dotenv: ^16.0.3
       nodemon: ^2.0.4
       puppeteer-core: ^19.8.5
     dependencies:
+      dotenv: 16.0.3
       puppeteer-core: 19.8.5
     devDependencies:
       '@types/node': 18.11.19
@@ -9602,6 +9604,11 @@ packages:
 
   /dotenv-expand/5.1.0:
     resolution: {integrity: sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==}
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /dotenv/8.2.0:

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "launch": "/Applications/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --remote-debugging-port=3002",
-    "test": "NODE_ENV=beta nodemon ./src/app.ts"
+    "test": "NODE_ENV=beta nodemon ./src/app.ts",
+    "test:prod": "NODE_ENV=production nodemon ./src/app.ts"
   },
   "nodemonConfig": {
     "ignore": [],
@@ -16,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "puppeteer-core": "^19.8.5"
   },
   "devDependencies": {
