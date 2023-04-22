@@ -1,20 +1,21 @@
-import { Page } from "puppeteer-core";
+import { Page } from 'puppeteer-core';
 
 const signup = async (page: Page) => {
+  console.log('开始处理注册。。。。');
   const { pathname, origin } = new URL(page.url());
- 
-  if (pathname !== "/signup") {
+
+  if (pathname !== '/signup') {
     await page.goto(`${origin}/signup`);
   }
-  await page.waitForSelector("#email");
+  await page.waitForSelector('#email');
 
-  const $username = await page.$("#email"); 
-  await $username?.type("rs2gj4ea@yzm.de", {
+  const $username = await page.$('#email');
+  await $username?.type('rs2gj4ea@yzm.de', {
     delay: 100,
   });
 
-  const $password = await page.$("#password");
-  await $password?.type("11111111", {
+  const $password = await page.$('#password');
+  await $password?.type('11111111', {
     delay: 100,
   });
 
