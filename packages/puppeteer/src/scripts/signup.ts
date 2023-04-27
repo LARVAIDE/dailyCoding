@@ -8,7 +8,7 @@ const signup = async (page: Page) => {
     await page.goto(`${origin}/signup`);
   }
   await page.waitForSelector('#email');
-
+ 
   const $username = await page.$('#email');
   await $username?.type('rs2gj4ea@yzm.de', {
     delay: 100,
