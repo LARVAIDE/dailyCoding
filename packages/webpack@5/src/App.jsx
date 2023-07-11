@@ -28,6 +28,13 @@ const App = () => {
     });
   };
 
+  const FnComp = () => {
+    return <>
+      <div>ssssss</div>
+      <span>aaaaaa</span>
+    </>
+  }
+
   return (
     <>
       <div>
@@ -44,6 +51,9 @@ const App = () => {
         <source srcSet={jsobj} media="(min-width: 800px)" />
         <img src={jsobj} alt="404" />
       </picture>
+
+      {FnComp()}
+      <FnComp />
     </>
   );
 };

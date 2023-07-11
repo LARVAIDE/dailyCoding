@@ -103,8 +103,8 @@ const commonConfig = {
    * 排除三方包改用cdn
    */
   externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
+    // react: 'React',
+    // 'react-dom': 'ReactDOM',
   },
 };
 

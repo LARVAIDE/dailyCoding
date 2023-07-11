@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: ENOENT: no such file or directory, copyfile '/Users/larvide/Library/Caches/Yarn/v6/npm-globby-13.1.2-integrity/node_modules/globby/index.d.ts' -> '/Users/larvide/dailyCoding/packages/webpack@5/node_modules/copy-webpack-plugin/node_modules/globby/index.d.ts'
+  Error: EINVAL: invalid argument, mkdir '/Users/larvide/dailyCoding/packages/webpack@5/node_modules/express/node_modules'
 
 npm manifest: 
   {

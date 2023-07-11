@@ -17,12 +17,15 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/packages/debugSourceCode/antd-react-test",
+      "url": "http://localhost:8088",
+      "runtimeExecutable": "canary",
+      "webRoot": "${workspaceFolder}/packages/webpack@5",
+      "sourceMaps": true,
+      "skipFiles": ["<node_internals>/**"],
       "sourceMapPathOverrides": {
-        "meteor://💻app/*": "${workspaceFolder}/packages/debugSourceCode/antd-react-test/*",
-        "webpack:///./~/*": "${workspaceFolder}/packages/debugSourceCode/antd-react-test/node_modules/*",
-        "webpack://?:*/*": "${workspaceFolder}/packages/debugSourceCode/antd-react-test/*"
+        "meteor://💻app/*": "${workspaceFolder}/packages/webpack@5/*",
+        "webpack:///./~/*": "${workspaceFolder}/packages/webpack@5/node_modules/*",
+        "webpack://?:*/*": "${workspaceFolder}/packages/webpack@5/*"
       }
     },
     {
